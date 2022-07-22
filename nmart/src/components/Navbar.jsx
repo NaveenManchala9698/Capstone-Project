@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "../css/Navbar.css";
 import React from "react";
+import fire from "../fire";
 import {
   BoxArrowRight,
   Cart4,
@@ -11,7 +12,10 @@ import {
   SearchHeart,
 } from "react-bootstrap-icons";
 
-const Navbar = ({ handleLogout }) => {
+const Navbar = () => {
+  const handleLogout = () => {
+    fire.auth().signOut();
+  };
   return (
     <nav className="nav">
       <a href="/" className="site-title">
