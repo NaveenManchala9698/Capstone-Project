@@ -4,18 +4,20 @@ import React from "react";
 import fire from "../fire";
 import {
   BoxArrowRight,
+  CaretDown,
+  CaretDownFill,
   Cart4,
   Heart,
-  PersonCircle,
   PersonFill,
   Search,
-  SearchHeart,
 } from "react-bootstrap-icons";
+import categoriesJson from "../data/categories.json";
 
 const Navbar = () => {
   const handleLogout = () => {
     fire.auth().signOut();
   };
+
   return (
     <nav className="nav">
       <a href="/" className="site-title">
@@ -30,6 +32,18 @@ const Navbar = () => {
         </li>
         <li>
           <a href="/kids">KIDS</a>
+        </li>
+        <li>
+          <a href="/categories">
+            ALL CATEGORIES
+            <CaretDownFill />
+          </a>
+          <div className="sub-menu">
+            {categoriesJson &&
+              categoriesJson.map((eachCategory) => (
+                <a href="#">{eachCategory.CatName}</a>
+              ))}
+          </div>
         </li>
       </ul>
       <div class="search-box">
@@ -52,7 +66,7 @@ const Navbar = () => {
           </div>
           <div className="mr-3 my-0">
             <Cart4 />
-            <div>Cart</div>
+            <div>Cart (0)</div>
           </div>
         </div>
         <div className="logout">
@@ -63,6 +77,7 @@ const Navbar = () => {
           >
             <BoxArrowRight className="mr-2" /> Log out
           </a>
+          {/* <div>{user?.email}</div> */}
         </div>
       </div>
     </nav>

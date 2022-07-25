@@ -41,11 +41,11 @@ body {
   padding: 0.25rem;
 }
 
-.nav li.active {
+.nav ul li.active {
   background-color: #555;
 }
 
-.nav li:hover {
+.nav ul li:hover {
   background-color: #777;
 }
 
@@ -85,4 +85,31 @@ body {
 
 .nav-icons {
   font-size: 20px;
+}
+
+/* Categories dropdown */
+
+.sub-menu {
+  display: none;
+}
+
+.nav ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(223, 220, 220);
+  color: black;
+}
+
+.nav ul li:hover .sub-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.nav ul li:hover .sub-menu ul li {
+  width: 140px;
+  padding: 10px;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
 }

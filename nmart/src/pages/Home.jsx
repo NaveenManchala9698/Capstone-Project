@@ -1,11 +1,13 @@
-const Home = ({ handleLogout, user }) => {
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
+import Products from "../components/Products";
+
+const Home = () => {
   return (
     <>
-      <h1>Hello All!!</h1>
-      <button onClick={handleLogout} style={{}}>
-        LOGOUT
-      </button>
-      <div>{user?.email}</div>
+      <Navbar />
+      <Hero />
+      <Products />
     </>
   );
 };
