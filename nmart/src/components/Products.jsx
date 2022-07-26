@@ -49,7 +49,7 @@ const Products = () => {
         </div>
         {productsJson.results &&
           productsJson.results.map((eachProduct) => (
-            <Col md={3}>
+            <Col key={eachProduct.code} md={3}>
               <SingleProduct eachProduct={eachProduct} />
             </Col>
           ))}

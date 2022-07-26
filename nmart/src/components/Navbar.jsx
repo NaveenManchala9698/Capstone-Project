@@ -4,14 +4,16 @@ import React from "react";
 import fire from "../fire";
 import {
   BoxArrowRight,
-  CaretDown,
   CaretDownFill,
+  CaretRightFill,
   Cart4,
+  Flag,
   Heart,
   PersonFill,
   Search,
 } from "react-bootstrap-icons";
 import categoriesJson from "../data/categories.json";
+import regionsJson from "../data/regions.json";
 
 const Navbar = () => {
   const handleLogout = () => {
@@ -41,16 +43,18 @@ const Navbar = () => {
           <div className="sub-menu">
             {categoriesJson &&
               categoriesJson.map((eachCategory) => (
-                <a href="#">{eachCategory.CatName}</a>
+                <a key={eachCategory.CatName} href="/">
+                  {eachCategory.CatName}
+                </a>
               ))}
           </div>
         </li>
       </ul>
-      <div class="search-box">
+      <div className="search-box">
         <Search className="search-icon" />
         <input
           type="text"
-          class="input-search"
+          className="input-search"
           placeholder="Type to Search..."
         />
       </div>
@@ -67,6 +71,27 @@ const Navbar = () => {
           <div className="mr-3 my-0">
             <Cart4 />
             <div>Cart (0)</div>
+          </div>
+          <div className="mr-3 my-1 flag">
+            <Flag />
+            <CaretDownFill />
+            <div className="sub-menu-2">
+              {regionsJson &&
+                regionsJson.map((eachRegion) => (
+                  <a key={eachRegion.region} href="/">
+                    <CaretRightFill />
+                    {eachRegion.region}
+                  </a>
+                ))}
+              <div className="sub-menu-3">
+                {regionsJson &&
+                  regionsJson.map((eachRegion) => (
+                    <a key={eachRegion.countries[0].code} href="/">
+                      {eachRegion.countries[0].name}
+                    </a>
+                  ))}
+              </div>
+            </div>
           </div>
         </div>
         <div className="logout">

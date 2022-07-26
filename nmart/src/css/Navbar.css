@@ -79,7 +79,7 @@ body {
 /*  LOGOUT  */
 
 .logout-btn {
-  padding: 5px 10px !important;
+  padding: 10px 10px !important;
   border-radius: 10px;
 }
 
@@ -97,7 +97,7 @@ body {
   display: block;
   position: absolute;
   z-index: 1;
-  background-color: rgb(223, 220, 220);
+  background-color: rgb(100, 186, 197);
   color: black;
 }
 
@@ -107,9 +107,42 @@ body {
 }
 
 .nav ul li:hover .sub-menu ul li {
-  width: 140px;
-  padding: 10px;
+  padding: 500px;
   background: transparent;
   border-radius: 0;
   text-align: left;
+}
+
+/* REGIONS DROPDOWN */
+
+.sub-menu-2 {
+  display: none;
+  margin-top: 20px;
+}
+
+.nav .nav-right .nav-icons .flag:hover .sub-menu-2 {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(223, 220, 220);
+  color: black;
+}
+
+.nav .nav-right .nav-icons .flag:hover .sub-menu-2 a {
+  margin: 10px;
+  width: 180px;
+}
+
+/* SUB-MENU 3 */
+
+.sub-menu-3 {
+  display: none;
+}
+
+.nav .nav-right .nav-icons .flag .sub-menu-2:hover .sub-menu-3 {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  background-color: rgb(223, 220, 220);
+  color: black;
 }

@@ -1,0 +1,39 @@
+.add-btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #38759e;
+  border-radius: 0.6em;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center !important;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.add-btn:hover {
+  color: rgb(21, 21, 21);
+  outline: 0;
+  background-color: rgb(241, 241, 241) !important;
+}
+.add-btn:focus {
+  color: rgb(54, 39, 152);
+  outline: 0;
+}
+
+.add {
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
+}
+.add:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
