@@ -14,6 +14,7 @@ import {
 } from "react-bootstrap-icons";
 import categoriesJson from "../data/categories.json";
 import regionsJson from "../data/regions.json";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const handleLogout = () => {
@@ -64,10 +65,12 @@ const Navbar = () => {
             <PersonFill /> <div>Profile</div>
           </div>
 
-          <div className="mr-3 my-0">
-            <Heart />
-            <div>Wishlist</div>
-          </div>
+          <Link to="/favourites">
+            <div className="mr-3 my-0">
+              <Heart />
+              <div>Wishlist</div>
+            </div>
+          </Link>
           <div className="mr-3 my-0">
             <Cart4 />
             <div>Cart (0)</div>

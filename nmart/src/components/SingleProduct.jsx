@@ -1,10 +1,24 @@
 import { Button } from "bootstrap";
 import { Card, Carousel } from "react-bootstrap";
-import { Heart } from "react-bootstrap-icons";
+import { Heart, HeartFill } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 import "../css/SingleProduct.css";
+import { useSelector, useDispatch } from "react-redux";
+import productsJson from "../data/products.json";
+import { addFavourite, removeFavourite } from "../redux/actions";
 
 const SingleProduct = ({ eachProduct }) => {
+  const favourites = useSelector((state) => state.favourites);
+
+  const dispatch = useDispatch();
+
+  const isFav = favourites.includes(eachProduct.articles[0].code);
+  const toggleFavourite = () => {
+    isFav
+      ? dispatch(removeFavourite(eachProduct.articles[0].code))
+      : dispatch(addFavourite(eachProduct.articles[0].code));
+  };
+
   return (
     <>
       {/*  <Card style={{ width: "18rem" }}>
@@ -40,15 +54,35 @@ const SingleProduct = ({ eachProduct }) => {
 
       <Card.Body>
         <div className="d-flex justify-content-between">
+          <Card.Title className="text-left">
+            <b>{eachProduct.brandName}</b>
+          </Card.Title>
+          {isFav ? (
+            <HeartFill
+              color="red"
+              size={25}
+              className="me-4 my-auto"
+              onClick={toggleFavourite}
+            />
+          ) : (
+            <Heart
+              color="black"
+              size={25}
+              className="me-4 my-auto"
+              onClick={toggleFavourite}
+            />
+          )}
+        </div>
+
+        <div className="d-flex justify-content-between">
           <Card.Title className="text-left">{eachProduct.name}</Card.Title>
-          <Heart style={{ fontSize: "20px" }} />
         </div>
 
         <div className="d-flex justify-content-between">
           <Card.Text className="text-left">
-            {eachProduct.price.formattedValue}
+            <b>{eachProduct.price.formattedValue}</b>
           </Card.Text>
-          <button className="add-btn add">Add to Cart</button>
+          {/* <button className="add-btn add">Add to Cart</button> */}
         </div>
       </Card.Body>
     </>

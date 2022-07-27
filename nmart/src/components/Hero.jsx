@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero mt-5">
       <Card className="bg-dark text-white border-0">
         <Card.Img
-          src="https://images.pexels.com/photos/845434/pexels-photo-845434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt="Card image"
           height="700px"
         />

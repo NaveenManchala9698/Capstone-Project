@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import ProductDetail from "./pages/ProductDetail";
+import FavouritesPage from "./pages/FavouritesPage";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/product/:code" element={<ProductDetail />} />
+          <Route path="/product/:productID" element={<ProductDetail />} />
+          <Route path="/favourites" element={<FavouritesPage />} />
         </Routes>
       </BrowserRouter>
     </div>

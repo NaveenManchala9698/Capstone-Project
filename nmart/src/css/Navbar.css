@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-  margin: 1rem;
   text-align: center;
 }
 
@@ -16,6 +15,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  margin-bottom: 10rem !important;
   z-index: 2;
   background-color: white;
   color: rgb(19, 19, 19);

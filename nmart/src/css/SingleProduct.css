@@ -1,3 +1,9 @@
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.carousel-indicators {
+  display: none;
+}
+
 .add-btn {
   box-sizing: border-box;
   appearance: none;

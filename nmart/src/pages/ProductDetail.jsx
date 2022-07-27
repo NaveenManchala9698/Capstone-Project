@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import porductsJson from "../data/products.json";
 import "../css/ProductDetails.css";
 import { Cart3, CircleFill, Heart } from "react-bootstrap-icons";
+import { useParams } from "react-router-dom";
 
 const ProductDetail = () => {
   const [productDetails, setProductDetails] = useState([]);
@@ -13,6 +14,8 @@ const ProductDetail = () => {
   useEffect(() => {
     fetchProductDetails();
   }, []);
+
+  const productID = useParams.code;
 
   const fetchProductDetails = async () => {
     try {
@@ -26,7 +29,8 @@ const ProductDetail = () => {
       };
 
       const response = await fetch(
-        "https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/products/detail?lang=en&productcode=1011909021&country=us",
+        "https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/products/detail?lang=en&country=us&productcode=" +
+          productID,
         options
       );
 
@@ -46,7 +50,7 @@ const ProductDetail = () => {
     <>
       <Navbar />
       <div style={{ marginTop: "6rem", backgroundColor: "lightgray" }}>
-        <Container>
+        <Container className="mx-auto">
           <Row>
             {productDetails && (
               <>
