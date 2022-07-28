@@ -4,7 +4,6 @@ import { Heart, HeartFill } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 import "../css/SingleProduct.css";
 import { useSelector, useDispatch } from "react-redux";
-import productsJson from "../data/products.json";
 import { addFavourite, removeFavourite } from "../redux/actions";
 
 const SingleProduct = ({ eachProduct }) => {
@@ -12,11 +11,11 @@ const SingleProduct = ({ eachProduct }) => {
 
   const dispatch = useDispatch();
 
-  const isFav = favourites.includes(eachProduct.articles[0].code);
+  const isFav = favourites.includes(eachProduct);
   const toggleFavourite = () => {
     isFav
-      ? dispatch(removeFavourite(eachProduct.articles[0].code))
-      : dispatch(addFavourite(eachProduct.articles[0].code));
+      ? dispatch(removeFavourite(eachProduct))
+      : dispatch(addFavourite(eachProduct));
   };
 
   return (

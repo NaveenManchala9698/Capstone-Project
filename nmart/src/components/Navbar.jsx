@@ -15,10 +15,45 @@ import {
 import categoriesJson from "../data/categories.json";
 import regionsJson from "../data/regions.json";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ search }) => {
   const handleLogout = () => {
     fire.auth().signOut();
+  };
+  const [query, setQuery] = useState("");
+
+  const handleChange = (e) => {
+    setQuery(e.target.value);
+  };
+
+  // GET PRODUCTS
+
+  const [searchResults, setSearchResults] = useState([]);
+
+  const fetchProducts = async (query) => {
+    try {
+      const response = await fetch(
+        `https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/products/list?country=us&lang=en&currentpage=0&pagesize=30&categories=${query}`,
+        {
+          headers: {
+            "X-RapidAPI-Key":
+              "5d2034d125msh78b9ecc89aef859p194cffjsn00dd4be77fd8",
+            "X-RapidAPI-Host": "apidojo-hm-hennes-mauritz-v1.p.rapidapi.com",
+          },
+        }
+      );
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+        const allProducts = data.results;
+        setSearchResults(allProducts);
+      } else {
+        console.log("Errrrror!!");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -52,9 +87,13 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="search-box">
-        <Search className="search-icon" />
+        <Link to="/category">
+          <Search className="search-icon" onClick={() => search(query)} />
+        </Link>
         <input
           type="text"
+          value={query}
+          onChange={handleChange}
           className="input-search"
           placeholder="Type to Search..."
         />

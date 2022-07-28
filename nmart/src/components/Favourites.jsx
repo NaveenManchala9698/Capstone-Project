@@ -1,4 +1,11 @@
-import { Container, Row, Col, ListGroup, ListGroupItem } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  ListGroup,
+  ListGroupItem,
+  Card,
+} from "react-bootstrap";
 import { HeartFill } from "react-bootstrap-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { removeFavourite } from "../redux/actions";
@@ -10,20 +17,37 @@ const Favourites = () => {
   return (
     <Container className="mx-auto" style={{ marginTop: "7rem" }}>
       <Row>
-        <Col sm={12}>
-          <ListGroup>
+        {favourites &&
+          favourites.map((eachProduct, i) => (
+            <Col md={4} key={i}>
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src={eachProduct.images[0].url} />
+                <Card.Body>
+                  <Card.Title>{eachProduct.name}</Card.Title>
+                  <Card.Text>
+                    <HeartFill
+                      color="red"
+                      onClick={() => dispatch(removeFavourite(eachProduct))}
+                    />
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+
+        {/* <ListGroup>
             {favourites &&
-              favourites.map((f, i) => (
+              favourites.map((eachProduct, i) => (
                 <ListGroupItem key={i}>
                   <HeartFill
                     color="red"
-                    onClick={() => dispatch(removeFavourite(f))}
+                    onClick={() => dispatch(removeFavourite(eachProduct))}
                   />
-                  <span>{f}</span>
+                  <img src={eachProduct.images.url} alt="#" />
+                  <span>{eachProduct.name}</span>
                 </ListGroupItem>
               ))}
-          </ListGroup>
-        </Col>
+          </ListGroup> */}
       </Row>
     </Container>
   );

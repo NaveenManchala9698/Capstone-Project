@@ -8,14 +8,23 @@ import "../css/ProductDetails.css";
 import { Cart3, CircleFill, Heart } from "react-bootstrap-icons";
 import { useParams } from "react-router-dom";
 
-const ProductDetail = () => {
+const ProductDetail = ({ products }) => {
   const [productDetails, setProductDetails] = useState([]);
+  const [productImageUrl, setProductImageUrl] = useState("");
+
+  const params = useParams();
+  const productID = params.productID;
 
   useEffect(() => {
     fetchProductDetails();
   }, []);
 
-  const productID = useParams.code;
+  useEffect(() => {
+    const currentProduct = products.find(
+      (p) => p.articles[0].code === productID
+    );
+    setProductImageUrl(currentProduct.articles[0].normalPicture[0].url);
+  }, [productID, products]);
 
   const fetchProductDetails = async () => {
     try {
@@ -56,10 +65,7 @@ const ProductDetail = () => {
               <>
                 <Col md={6} className="mt-5 ">
                   <img
-                    src={
-                      porductsJson.results[0].defaultArticle.normalPicture[0]
-                        .url
-                    }
+                    src={productImageUrl}
                     alt={porductsJson.results[0].name}
                     height="600px"
                     width="400px"
@@ -79,8 +85,7 @@ const ProductDetail = () => {
 
                   <div className="d-flex">
                     <h3 className="mr-3">
-                      <b>Price: </b>
-                      {porductsJson.results[0].price.formattedValue}
+                      <b>Price: </b>$ {/* {productDetails.whitePrice.price} */}
                     </h3>
                     <a href="#" className="cart_btn mx-1">
                       <Cart3 className="mx-2" />
