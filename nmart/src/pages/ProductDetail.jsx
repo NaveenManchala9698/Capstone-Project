@@ -32,7 +32,7 @@ const ProductDetail = ({ products }) => {
         method: "GET",
         headers: {
           "X-RapidAPI-Key":
-            "5d2034d125msh78b9ecc89aef859p194cffjsn00dd4be77fd8",
+            "dca4ee111amsh4fb2a63abc004dcp1e797fjsn03712ea92185",
           "X-RapidAPI-Host": "apidojo-hm-hennes-mauritz-v1.p.rapidapi.com",
         },
       };
@@ -175,11 +175,6 @@ const ProductDetail = ({ products }) => {
                         productDetails.materialDetails.map((eachMaterial) => (
                           <li className="px-3 py-1">{eachMaterial.name}</li>
                         ))}
-                    </>
-                  </div>
-                  <div className="mt-3">
-                    <>
-                      <h5>SPECIFICATIONS:</h5>
                     </>
                   </div>
                 </Col>

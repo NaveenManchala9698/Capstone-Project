@@ -1,8 +1,9 @@
-import favouritesReducer from "../reducers";
+import favouritesReducer from "../reducers/favouritesReducer.js";
+
 import localStorage from "redux-persist/lib/storage";
 import { persistStore, persistReducer } from "redux-persist";
 import { encryptTransform } from "redux-persist-transform-encrypt";
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 
 const persistConfig = {
   key: "root",

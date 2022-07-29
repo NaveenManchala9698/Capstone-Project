@@ -18,7 +18,7 @@ const SearchedCategoryPage = () => {
         {
           headers: {
             "X-RapidAPI-Key":
-              "5d2034d125msh78b9ecc89aef859p194cffjsn00dd4be77fd8",
+              "dca4ee111amsh4fb2a63abc004dcp1e797fjsn03712ea92185",
             "X-RapidAPI-Host": "apidojo-hm-hennes-mauritz-v1.p.rapidapi.com",
           },
         }

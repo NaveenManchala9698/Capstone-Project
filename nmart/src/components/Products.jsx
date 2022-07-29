@@ -3,7 +3,7 @@ import SingleProduct from "./SingleProduct";
 
 const Products = ({ products }) => {
   return (
-    <Container className="mx-auto">
+    <Container className="mx-auto mt-3">
       <Row>
         <div className="col-12 text-center ">
           <h1>All Products</h1>

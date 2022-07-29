@@ -1,11 +1,4 @@
-import {
-  Container,
-  Row,
-  Col,
-  ListGroup,
-  ListGroupItem,
-  Card,
-} from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { HeartFill } from "react-bootstrap-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { removeFavourite } from "../redux/actions";
