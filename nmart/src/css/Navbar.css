@@ -51,7 +51,7 @@ body {
 }
 
 .nav ul li:hover {
-  background-color: #777;
+  border-bottom: 5px solid rgb(244, 125, 145);
 }
 
 /* Search-Box */
@@ -90,6 +90,7 @@ body {
 
 .nav-icons {
   font-size: 20px;
+  text-align: center;
 }
 
 /* Categories dropdown */
