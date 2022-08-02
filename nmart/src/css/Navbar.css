@@ -119,7 +119,7 @@ body {
   width: 35px;
   height: 40px;
   margin: 10px 0px;
-  background-color: rgb(66, 93, 198);
+  background-color: rgb(5, 5, 5);
   transition: width 0.35s;
   -webkit-transition: width 0.35s;
   overflow: hidden;
