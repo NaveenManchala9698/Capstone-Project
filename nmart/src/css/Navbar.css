@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: "Outfit", sans-serif;
 }
 
 .container {
@@ -11,6 +15,7 @@ body {
 }
 
 .nav {
+  font-family: "Oswald", sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -50,10 +55,6 @@ body {
   background-color: #555;
 }
 
-.nav ul li:hover {
-  border-bottom: 5px solid rgb(244, 125, 145);
-}
-
 /* Search-Box */
 
 .search-box {
@@ -77,13 +78,65 @@ body {
 }
 
 .nav-right {
-  padding: 15px;
+  padding: 15px 0px;
   align-items: center;
+  font-size: 18px;
+}
+
+.nav-right .nav-icons {
+  margin-right: 10px !important;
 }
 
 /*  LOGOUT  */
 
-.logout-btn {
+.logout-div {
+  text-align: right;
+}
+
+.logout-div img {
+  width: 25px;
+  border-radius: 50px;
+  float: left;
+}
+
+.logout {
+  color: aliceblue;
+  font-size: 1em;
+  margin-left: 1em;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 0.45s;
+  -webkit-transition: opacity 0.35s;
+}
+
+.logout-button {
+  text-decoration: none;
+  margin: 5px 0px;
+  color: white;
+  width: 35px;
+  height: 40px;
+  margin: 10px 0px;
+  background-color: rgb(66, 93, 198);
+  transition: width 0.35s;
+  -webkit-transition: width 0.35s;
+  overflow: hidden;
+}
+
+.logout-div a:hover {
+  width: 120px;
+}
+
+a:hover .logout {
+  opacity: 0.9;
+}
+a {
+  text-decoration: none;
+}
+
+/* .logout-btn {
   padding: 10px 10px !important;
   border-radius: 10px;
 }
@@ -91,7 +144,7 @@ body {
 .nav-icons {
   font-size: 20px;
   text-align: center;
-}
+} */
 
 /* Categories dropdown */
 
@@ -102,21 +155,25 @@ body {
 .nav ul li:hover .sub-menu {
   display: block;
   position: absolute;
+  width: 150px;
   z-index: 1;
-  background-color: rgb(100, 186, 197);
-  color: black;
+  background-color: rgb(247, 244, 244);
 }
 
 .nav ul li:hover .sub-menu ul {
   display: block;
-  margin: 10px;
 }
 
 .nav ul li:hover .sub-menu ul li {
-  padding: 500px;
   background: transparent;
   border-radius: 0;
   text-align: left;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.nav ul li:hover .sub-menu ul li:hover {
+  background-color: bisque;
 }
 
 /* REGIONS DROPDOWN */

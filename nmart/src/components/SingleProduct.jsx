@@ -3,9 +3,23 @@ import { Cart4, Heart, HeartFill } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 import "../css/SingleProduct.css";
 import { useSelector, useDispatch } from "react-redux";
-import { addFavourite, removeFavourite } from "../redux/actions";
-import { useEffect } from "react";
-import ProductDetail from "../pages/ProductDetail";
+import { addFavourite, addToCart, removeFavourite } from "../redux/actions";
+import { connect } from "react-redux";
+
+/* const mapStateToProps = (state) => {
+  return {};
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addToCart: (product) => {
+      dispatch({
+        type: "ADD_TO_CART",
+        payload: product,
+      });
+    },
+  };
+}; */
 
 const SingleProduct = ({ eachProduct }) => {
   const favourites = useSelector((state) => state.favourites);
@@ -74,7 +88,12 @@ const SingleProduct = ({ eachProduct }) => {
             <Card.Text className="text-left">
               <b>{eachProduct.price.formattedValue}</b>
             </Card.Text>
-            <button className="add-btn add">
+            <button
+              className="add-btn add"
+              /* onClick={() => {
+                addToCart(product);
+              }} */
+            >
               <Cart4 className="mx-2" />
               Add
             </button>
@@ -85,4 +104,5 @@ const SingleProduct = ({ eachProduct }) => {
   );
 };
 
+/* export default connect(mapStateToProps, mapDispatchToProps)(SingleProduct) */
 export default SingleProduct;

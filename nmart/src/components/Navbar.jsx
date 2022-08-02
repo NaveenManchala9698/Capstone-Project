@@ -15,6 +15,8 @@ import {
 import regionsJson from "../data/regions.json";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import CartIndicator from "./CartIndicator";
+import SearchBar from "./SearchBar";
 
 const Navbar = ({ search }) => {
   const handleLogout = () => {
@@ -48,44 +50,48 @@ const Navbar = ({ search }) => {
         <li>
           <a href="/kids">KIDS</a>
         </li>
+
         <li>
-          <a href="/categories">
+          <a href="#">
             ALL CATEGORIES
             <CaretDownFill />
           </a>
           <div className="sub-menu">
-            <Link to="/baby">
-              <li>Baby</li>
-            </Link>
-            <Link to="/giftGuide">
-              <li>Gift Guide</li>
-            </Link>
-            <Link to="/women">
-              <li>Women</li>
-            </Link>
-            <Link to="/divided">
-              <li>Divided</li>
-            </Link>
-            <Link to="/men">
-              <li>Men</li>
-            </Link>
-            <Link to="/kids">
-              <li>Kids</li>
-            </Link>
-            <Link to="/home">
-              <li>H&M Home</li>
-            </Link>
-            <Link to="/outlet">
-              <li>Outlet</li>
-            </Link>
-            <Link to="/sale">
-              <li>SALE</li>
-            </Link>
+            <ul>
+              <Link to="/baby">
+                <li>Baby</li>
+              </Link>
+              <Link to="/giftGuide">
+                <li>Gift Guide</li>
+              </Link>
+              <Link to="/women">
+                <li>Women</li>
+              </Link>
+              <Link to="/divided">
+                <li>Divided</li>
+              </Link>
+              <Link to="/men">
+                <li>Men</li>
+              </Link>
+              <Link to="/kids">
+                <li>Kids</li>
+              </Link>
+              <Link to="/home">
+                <li>H&M Home</li>
+              </Link>
+              <Link to="/outlet">
+                <li>Outlet</li>
+              </Link>
+              <Link to="/sale">
+                <li>SALE</li>
+              </Link>
+            </ul>
           </div>
         </li>
       </ul>
       <div className="search-box">
-        <Link to="/RandomPage">
+        <SearchBar />
+        {/* <Link to="/RandomPage">
           <Search className="search-icon mt-2" onClick={() => search(query)} />
         </Link>
         <input
@@ -94,25 +100,26 @@ const Navbar = ({ search }) => {
           onChange={handleChange}
           className="input-search"
           placeholder="Search..."
-        />
+        /> */}
       </div>
       <div className="nav-right d-flex">
         <div className="nav-icons d-flex mx-4 ">
-          <div className="mr-3 my-0">
+          <div className="mr-3 my-0 text-center">
             <PersonFill /> <div>Profile</div>
           </div>
 
           <Link to="/favourites" className="p-0">
-            <div className="mr-3 my-0">
+            <div className="mr-3 my-0 text-center">
               <Heart />
               <div>Wishlist</div>
             </div>
           </Link>
-          <div className="mr-3 my-0">
-            <Cart4 />
-            <div>Cart (0)</div>
+          <div className="mr-3 my-0 text-center">
+            <CartIndicator />
+            {/* <Cart4 />
+            <div>Cart (0)</div> */}
           </div>
-          <div className="mr-3 my-0 flag">
+          <div className="mr-3 my-0 text-center flag ">
             <Flag />
 
             <div>
@@ -138,14 +145,13 @@ const Navbar = ({ search }) => {
             </div>
           </div>
         </div>
-        <div className="logout">
-          <a
-            href="#"
-            className="btn btn-secondary logout-btn"
-            onClick={handleLogout}
-          >
-            <BoxArrowRight className="mr-2" /> Log out
+        <div className="logout-div">
+          <a href="#" className="logout-button" onClick={handleLogout}>
+            <img src="https://secure.gravatar.com/avatar/b00a75773920a3d17b9098645e34459c?s=384" />
+            <div className="logout">LOGOUT</div>
           </a>
+          {/* <BoxArrowRight className="mr-2" /> Log out
+          </a> */}
           {/* <div>{user?.email}</div> */}
         </div>
       </div>
