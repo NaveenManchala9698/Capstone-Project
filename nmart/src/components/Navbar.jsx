@@ -147,6 +147,7 @@ const Navbar = ({ search }) => {
         </div>
         <div className="logout-div">
           <a href="#" className="logout-button" onClick={handleLogout}>
+            {/* <BoxArrowRight className="logout-icon" /> */}
             <img src="https://secure.gravatar.com/avatar/b00a75773920a3d17b9098645e34459c?s=384" />
             <div className="logout">LOGOUT</div>
           </a>

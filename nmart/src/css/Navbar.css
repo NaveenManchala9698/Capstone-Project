@@ -1,13 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
-@import url(https://fonts.googleapis.com/css?family=Oswald:400);
-
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Outfit", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .container {
@@ -15,14 +12,14 @@ body {
 }
 
 .nav {
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   margin-bottom: 10rem !important;
   z-index: 2;
-  background-color: white;
+  background: #f9f9f9;
   color: rgb(19, 19, 19);
   display: flex;
   justify-content: space-between;
@@ -32,7 +29,7 @@ body {
 }
 
 .site-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .nav ul {
@@ -57,24 +54,60 @@ body {
 
 /* Search-Box */
 
-.search-box {
-  padding: 15px;
-  position: relative;
+.search__container {
+  padding-top: 0.5rem;
 }
 
-.search-icon {
-  position: absolute;
-  font-size: 20px;
-  left: 25px;
-  top: 25px;
+.search__input {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  line-height: 18px;
+  color: #575756;
+  background-color: transparent;
+  /* background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
+
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 95% center;
+  border-radius: 50px;
+  border: 1px solid #575756;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
-.input-search {
-  border: none;
-  background-color: rgb(224, 223, 223);
-  padding: 10px;
-  padding-left: 40px;
-  border-radius: 10px;
+.search__input::placeholder {
+  color: rgba(87, 87, 86, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.search__input:hover,
+.search__input:focus {
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center;
+}
+
+.searchList a {
+  padding: 0;
+}
+
+.list-group-item {
+  width: 300px;
+}
+
+.list-group-item:hover {
+  background: #c2c27e;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid gray;
 }
 
 .nav-right {
@@ -94,9 +127,11 @@ body {
 }
 
 .logout-div img {
+  border-radius: 50%;
   width: 25px;
-  border-radius: 50px;
+  height: 25px;
   float: left;
+  color: aliceblue;
 }
 
 .logout {
@@ -126,25 +161,15 @@ body {
 }
 
 .logout-div a:hover {
-  width: 120px;
+  width: 140px;
 }
 
 a:hover .logout {
   opacity: 0.9;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
-
-/* .logout-btn {
-  padding: 10px 10px !important;
-  border-radius: 10px;
-}
-
-.nav-icons {
-  font-size: 20px;
-  text-align: center;
-} */
 
 /* Categories dropdown */
 
@@ -152,12 +177,16 @@ a {
   display: none;
 }
 
+.sub-menu ul a {
+  padding: 0;
+}
+
 .nav ul li:hover .sub-menu {
   display: block;
+  cursor: pointer;
   position: absolute;
-  width: 150px;
+  width: 200px;
   z-index: 1;
-  background-color: rgb(247, 244, 244);
 }
 
 .nav ul li:hover .sub-menu ul {
@@ -165,15 +194,20 @@ a {
 }
 
 .nav ul li:hover .sub-menu ul li {
-  background: transparent;
+  background-color: white;
+  color: gray;
+  padding: 10px 15px;
+  cursor: pointer;
   border-radius: 0;
   text-align: left;
-  padding-left: 1rem;
-  width: 100%;
+  width: 200px;
 }
 
 .nav ul li:hover .sub-menu ul li:hover {
-  background-color: bisque;
+  padding-left: 25px;
+  width: 170px;
+  color: #ec6f66;
+  font-weight: bold;
 }
 
 /* REGIONS DROPDOWN */

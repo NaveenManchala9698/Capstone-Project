@@ -1,0 +1,13 @@
+.hero {
+  margin-top: 10rem !important;
+}
+
+.hero img {
+  height: 450px;
+  width: auto;
+}
+
+.carousel-description {
+  margin-top: 7rem;
+  margin-left: 2rem;
+}

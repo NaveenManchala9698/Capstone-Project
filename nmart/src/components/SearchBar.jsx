@@ -65,24 +65,26 @@ const SearchBar = () => {
   };
   return (
     <div>
-      <div>
-        <InputGroup
-          style={{
-            marginTop: "6px",
-          }}
+      <div className="search__container">
+        <input
+          className="search__input"
           onClick={() => onInputClick(false)}
-          type="text"
           value={query}
           onChange={(e) => {
             setQuery(e.target.value);
           }}
-        >
-          <Form.Control placeholder="Search" />
-        </InputGroup>
+          type="text"
+          placeholder="Search"
+        />
       </div>
 
       {filteredData.length !== 0 && (
-        <div>
+        <div
+          style={{
+            position: "fixed",
+            zIndex: "3",
+          }}
+        >
           {filteredData.slice(0, 10).map((data) => {
             return (
               <ListGroup className="searchList">
