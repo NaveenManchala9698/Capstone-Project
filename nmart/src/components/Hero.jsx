@@ -1,5 +1,4 @@
 import "../css/Home.css";
-import Card from "react-bootstrap/Card";
 import { Carousel, Col, Container, Row } from "react-bootstrap";
 import { Plus } from "react-bootstrap-icons";
 
@@ -20,7 +19,7 @@ const Hero = () => {
               <Col md={4}>
                 <div className="carousel-description">
                   <div>
-                    <h1>HANDBAGS</h1>
+                    <h1>Travel Essentials</h1>
                   </div>
                   <div>
                     <h4>Min. 60% Off</h4>
@@ -45,10 +44,10 @@ const Hero = () => {
               <Col md={4}>
                 <div className="carousel-description">
                   <div>
-                    <h1>HANDBAGS</h1>
+                    <h1>Ladies Fashion</h1>
                   </div>
                   <div>
-                    <h4>Min. 60% Off</h4>
+                    <h4>Min. 30% Off</h4>
                   </div>
                   <hr />
                   <span style={{ cursor: "pointer" }}>
@@ -83,12 +82,146 @@ const Hero = () => {
               </Col>
             </Row>
           </Carousel.Item>
+          <Carousel.Item>
+            <Row>
+              <Col md={8}>
+                <img
+                  className="d-block w-100"
+                  src="https://images.pexels.com/photos/1103833/pexels-photo-1103833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Third slide"
+                />
+              </Col>
+              <Col md={4}>
+                <div className="carousel-description">
+                  <div>
+                    <h1>ActiveWear</h1>
+                  </div>
+                  <div>
+                    <h4>40-70% Off</h4>
+                  </div>
+                  <hr />
+                  <span style={{ cursor: "pointer" }}>
+                    <Plus /> Explore
+                  </span>
+                </div>
+              </Col>
+            </Row>
+          </Carousel.Item>
         </Carousel>
         <div className="categories-to-bag mt-4">
           <h1>CATEGORIES TO BAG</h1>
-        </div>
-        <div className="deal-of-day mt-4">
-          <h1>DEAL OF THE DAY</h1>
+          <Row className="mt-3">
+            <Col md={2}>
+              <div className="text-center">
+                <img
+                  src="https://images.pexels.com/photos/9047344/pexels-photo-9047344.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="handbags"
+                ></img>
+                <div className="category-text">Handbags</div>
+              </div>
+            </Col>
+            <Col md={2}>
+              <div className="text-center">
+                <img
+                  src="https://images.pexels.com/photos/356252/pexels-photo-356252.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Shirts"
+                ></img>
+                <div className="category-text">Shirts</div>
+              </div>
+            </Col>
+            <Col md={2}>
+              <div className="text-center">
+                <img
+                  src="https://images.pexels.com/photos/1082528/pexels-photo-1082528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Jeans"
+                ></img>
+                <div className="category-text">Jeans</div>
+              </div>
+            </Col>
+            <Col md={2}>
+              <div className="text-center">
+                <img
+                  src="https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Shoes"
+                ></img>
+                <div className="category-text">Sports Shoes</div>
+              </div>
+            </Col>
+            <Col md={2}>
+              <div className="text-center">
+                <img
+                  src="https://images.pexels.com/photos/1362724/pexels-photo-1362724.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Dresses"
+                ></img>
+                <div className="category-text">Dresses</div>
+              </div>
+            </Col>
+            <Col md={2}>
+              <div className="text-center">
+                <img
+                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Heels"
+                ></img>
+                <div className="category-text">Heels</div>
+              </div>
+            </Col>
+          </Row>
+          <Row className="mt-3">
+            <Col md={2}>
+              <div className="text-center">
+                <img
+                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Shirts"
+                ></img>
+                <div className="category-text">Infant Essentials</div>
+              </div>
+            </Col>
+            <Col md={2}>
+              <div className="text-center">
+                <img
+                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Shirts"
+                ></img>
+                <div className="category-text">Kids Wear</div>
+              </div>
+            </Col>
+            <Col md={2}>
+              <div className="text-center">
+                <img
+                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Shirts"
+                ></img>
+                <div className="category-text">Casual Shoes</div>
+              </div>
+            </Col>
+            <Col md={2}>
+              <div className="text-center">
+                <img
+                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Shirts"
+                ></img>
+                <div className="category-text">T-Shirts</div>
+              </div>
+            </Col>
+            <Col md={2}>
+              <div className="text-center">
+                <img
+                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Shirts"
+                ></img>
+                <div className="category-text">Sarees</div>
+              </div>
+            </Col>
+            <Col md={2}>
+              <div className="text-center">
+                <img
+                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Shirts"
+                ></img>
+                <div className="category-text">Kurtas</div>
+              </div>
+            </Col>
+          </Row>
         </div>
       </Container>
     </div>

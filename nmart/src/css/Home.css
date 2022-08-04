@@ -1,13 +1,26 @@
 .hero {
-  margin-top: 10rem !important;
+  margin-top: 8rem !important;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 .hero img {
-  height: 450px;
+  height: 500px;
   width: auto;
 }
 
 .carousel-description {
   margin-top: 7rem;
   margin-left: 2rem;
+}
+
+.hero .categories-to-bag img {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+
+.categories-to-bag .category-text {
+  text-align: center;
+  margin-top: 0.5rem;
 }

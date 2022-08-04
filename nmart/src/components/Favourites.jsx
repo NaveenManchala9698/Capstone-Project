@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import SingleProduct from "./SingleProduct";
 
 const Favourites = () => {
-  const favourites = useSelector((state) => state.favourites);
+  const favourites = useSelector((state) => state.favouritesReducer.favourites);
 
   return (
     <Container className="mx-auto" style={{ marginTop: "7rem" }}>

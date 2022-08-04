@@ -5,7 +5,7 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import favouritesReducer from "../reducers/favouritesReducer.js";
 import cartReducer from "../reducers/cartReducer.js";
 
-/* const persistConfig = {
+const persistConfig = {
   key: "root",
   storage: localStorage,
   transforms: [
@@ -13,14 +13,12 @@ import cartReducer from "../reducers/cartReducer.js";
       secretKey: "Naveen9698",
     }),
   ],
-}; */
+};
 
-/* const bigReducer = combineReducers({
+const bigReducer = combineReducers({
   favouritesReducer,
   cartReducer,
-}); */
-
-const bigReducer = favouritesReducer;
+});
 
 /* const persistedReducer = persistReducer(persistConfig, bigReducer);
 

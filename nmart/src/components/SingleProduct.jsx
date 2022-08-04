@@ -4,27 +4,20 @@ import { Link } from "react-router-dom";
 import "../css/SingleProduct.css";
 import { useSelector, useDispatch } from "react-redux";
 import { addFavourite, addToCart, removeFavourite } from "../redux/actions";
-import { connect } from "react-redux";
-
-/* const mapStateToProps = (state) => {
-  return {};
-};
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    addToCart: (product) => {
-      dispatch({
-        type: "ADD_TO_CART",
-        payload: product,
-      });
-    },
-  };
-}; */
+import { useState } from "react";
+import { useEffect } from "react";
 
 const SingleProduct = ({ eachProduct }) => {
-  const favourites = useSelector((state) => state.favourites);
+  const [product, setProduct] = useState([]);
+
+  useEffect(() => {
+    setProduct(eachProduct);
+  }, [eachProduct]);
+
+  const favourites = useSelector((state) => state.favouritesReducer.favourites);
 
   const dispatch = useDispatch();
+
   console.log(favourites);
   const isFav = favourites.find((p) => p.code === eachProduct.code)
     ? true
@@ -90,9 +83,9 @@ const SingleProduct = ({ eachProduct }) => {
             </Card.Text>
             <button
               className="add-btn add"
-              /* onClick={() => {
-                addToCart(product);
-              }} */
+              onClick={() => {
+                dispatch(addToCart(product));
+              }}
             >
               <Cart4 className="mx-2" />
               Add
@@ -104,5 +97,4 @@ const SingleProduct = ({ eachProduct }) => {
   );
 };
 
-/* export default connect(mapStateToProps, mapDispatchToProps)(SingleProduct) */
 export default SingleProduct;
