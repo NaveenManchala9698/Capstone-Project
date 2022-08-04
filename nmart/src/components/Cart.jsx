@@ -5,13 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 import "../css/CartPage.css";
 import { removeFromCart } from "../redux/actions";
 
-const Cart = ({ eachProduct }) => {
+const Cart = () => {
   const cartItems = useSelector((state) => state.cartReducer.content);
-  const [product, setProduct] = useState([]);
-
-  useEffect(() => {
-    setProduct(eachProduct);
-  }, [eachProduct]);
 
   const dispatch = useDispatch();
 
@@ -82,7 +77,7 @@ const Cart = ({ eachProduct }) => {
                 <Col md={1}>
                   <XLg
                     onClick={() => {
-                      dispatch(removeFromCart(product));
+                      dispatch(removeFromCart(i));
                     }}
                   />
                 </Col>
