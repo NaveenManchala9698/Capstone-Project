@@ -170,7 +170,7 @@ const Hero = () => {
             <Col md={2}>
               <div className="text-center">
                 <img
-                  src="http://hd.wallpaperswide.com/thumbs/tiny_newborn_baby_girl-t2.jpg"
+                  src="https://images.pexels.com/photos/1470677/pexels-photo-1470677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Shirts"
                 ></img>
                 <div className="category-text">Infant Essentials</div>
@@ -179,7 +179,7 @@ const Hero = () => {
             <Col md={2}>
               <div className="text-center">
                 <img
-                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://images.pexels.com/photos/35188/child-childrens-baby-children-s.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Shirts"
                 ></img>
                 <div className="category-text">Kids Wear</div>
@@ -188,7 +188,7 @@ const Hero = () => {
             <Col md={2}>
               <div className="text-center">
                 <img
-                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt="Shirts"
                 ></img>
                 <div className="category-text">Casual Shoes</div>
@@ -197,7 +197,7 @@ const Hero = () => {
             <Col md={2}>
               <div className="text-center">
                 <img
-                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Shirts"
                 ></img>
                 <div className="category-text">T-Shirts</div>
@@ -206,7 +206,7 @@ const Hero = () => {
             <Col md={2}>
               <div className="text-center">
                 <img
-                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://images.pexels.com/photos/8886948/pexels-photo-8886948.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt="Shirts"
                 ></img>
                 <div className="category-text">Sarees</div>
@@ -215,7 +215,7 @@ const Hero = () => {
             <Col md={2}>
               <div className="text-center">
                 <img
-                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://images.pexels.com/photos/6914302/pexels-photo-6914302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Shirts"
                 ></img>
                 <div className="category-text">Kurtas</div>
