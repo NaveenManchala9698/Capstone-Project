@@ -170,7 +170,7 @@ const Hero = () => {
             <Col md={2}>
               <div className="text-center">
                 <img
-                  src="https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="http://hd.wallpaperswide.com/thumbs/tiny_newborn_baby_girl-t2.jpg"
                   alt="Shirts"
                 ></img>
                 <div className="category-text">Infant Essentials</div>
