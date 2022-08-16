@@ -83,19 +83,14 @@ const ProductDetail = ({ products }) => {
                   </div>
                   <hr />
 
-                  <div className="d-flex">
-                    <h3 className="mr-3">
-                      <b>Price: </b>$ {/* {productDetails.whitePrice.price} */}
-                    </h3>
-                    <a href="#" className="cart_btn mx-1">
-                      <Cart3 className="mx-2" />
-                      ADD TO CART
-                    </a>
-                    <a href="#" class="wishlist_btn mx-1">
-                      <Heart className="mx-2" />
-                      WISHLIST
-                    </a>
+                  <div>
+                    {productDetails.whitePrice && (
+                      <h3 className="mr-3">
+                        <b>Price: </b>$ {productDetails.whitePrice.price}
+                      </h3>
+                    )}
                   </div>
+
                   <div className="mt-3">
                     <div class="dropdown">
                       <button
@@ -129,7 +124,7 @@ const ProductDetail = ({ products }) => {
                     </div>
                   </div>
 
-                  <div className="mt-3">
+                  <div className="mt-3 mb-4">
                     <h5>
                       <b>SELECT SIZE: </b>
                     </h5>
@@ -146,7 +141,23 @@ const ProductDetail = ({ products }) => {
                       XL
                     </a>
                   </div>
-                  <div className="mt-3">
+
+                  <div className="d-flex mt-3">
+                    <div>
+                      <a href="#" className="cart_btn">
+                        <Cart3 className="mx-2" />
+                        ADD TO CART
+                      </a>
+                    </div>
+                    <div>
+                      <a href="#" class="wishlist_btn">
+                        <Heart className="mx-2" />
+                        WISHLIST
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="mt-4">
                     <li>100% Original Products</li>{" "}
                     <li>Pay on delivery available</li>
                     <li>Easy 30 days returns and exchanges</li>

@@ -82,13 +82,13 @@ const SingleProduct = ({ eachProduct }) => {
               <b>{eachProduct.price.formattedValue}</b>
             </Card.Text>
             <button
-              className="add-btn add"
+              className="add-button"
               onClick={() => {
                 dispatch(addToCart(product));
               }}
             >
               <Cart4 className="mx-2" />
-              Add
+              ADD
             </button>
           </div>
         </Card.Body>

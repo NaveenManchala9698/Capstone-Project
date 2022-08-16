@@ -124,7 +124,7 @@ const Login = () => {
                   </>
                 ) : (
                   <>
-                    <button onClick={handleSignup}>
+                    <button className="login-button" onClick={handleSignup}>
                       <b>SIGN UP</b>
                     </button>
                     <p>
