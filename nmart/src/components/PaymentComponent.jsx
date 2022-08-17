@@ -1,5 +1,11 @@
 import { Apple, CreditCard, Paypal } from "react-bootstrap-icons";
-import { CardElement } from "@stripe/react-stripe-js";
+import {
+  CardElement,
+  CardNumberElement,
+  CardExpiryElement,
+  CardCvcElement,
+  PaymentElement,
+} from "@stripe/react-stripe-js";
 import "../css/PaymentPage.css";
 import { Link } from "react-router-dom";
 
@@ -84,47 +90,44 @@ const PaymentComponent = () => {
                 <label for="name">Cardholder Name</label>
                 <input id="name" type="text" placeholder="Full Name"></input>
               </div>
-              <div className="field full">
-                <CardElement />
-              </div>
               {/* <div className="field full">
+                <CardElement />
+              </div> */}
+              <div className="field full">
                 <label for="card-number">Card Number</label>
-                <input
-                  id="card-number"
-                  type="text"
-                  placeholder="1234-1234-1234-1234"
-                ></input>
+
+                <CardNumberElement />
               </div>
               <div className="flex justify-space-between">
                 <div className="field half">
                   <label for="exp.month">Exp. Month</label>
-                  <input id="exp.month" type="text" placeholder="12"></input>
+
+                  <CardExpiryElement />
                 </div>
                 <div className="field half">
-                  <label for="exp.year">Exp. Year</label>
-                  <input id="exp.year" type="text" placeholder="23"></input>
+                  <label for="cvc">CVC Number</label>
+
+                  <CardCvcElement />
                 </div>
               </div>
-              <div className="field full">
-                <label for="cvc">CVC Number</label>
-                <input id="cvc" type="text" placeholder="123"></input>
-              </div> */}
             </div>
           </div>
         </div>
         <div className="card-actions flex justify-space-between">
           <div className="flex-start">
             <Link to="/">
-              <button className="button button-secondary">
+              <button className="return-store-button button-secondary">
                 Return to Store
               </button>
             </Link>
           </div>
           <div className="flex-end">
             <Link to="/cart">
-              <button className="button button-link">Back to Cart</button>
+              <button className="return-cart-button return-cart-button-link">
+                Back to Cart
+              </button>
             </Link>
-            <button className="button button-primary">Proceed</button>
+            <button className="pay-button button-primary">Proceed</button>
           </div>
         </div>
       </div>

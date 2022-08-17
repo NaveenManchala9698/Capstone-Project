@@ -1,4 +1,9 @@
-import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
+import {
+  CardElement,
+  PaymentElement,
+  useElements,
+  useStripe,
+} from "@stripe/react-stripe-js";
 import axios from "axios";
 import { useState } from "react";
 import "../css/PaymentPage.css";
