@@ -173,7 +173,9 @@ const Cart = () => {
               </Col>
             </Row>
             <div>
-              <button className="order-button">PLACE ORDER</button>
+              <Link to="/payment">
+                <button className="order-button">PLACE ORDER</button>
+              </Link>
             </div>
           </Col>
         </Row>

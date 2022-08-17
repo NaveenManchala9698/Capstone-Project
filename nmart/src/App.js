@@ -8,6 +8,7 @@ import FavouritesPage from "./pages/FavouritesPage";
 import SearchedCategoryPage from "./pages/SearchedCategoryPage";
 import { useEffect, useState } from "react";
 import CartPage from "./pages/CartPage";
+import StripeContainer from "./components/StripeContainer";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -54,6 +55,7 @@ function App() {
           />
           <Route path="/RandomPage" element={<SearchedCategoryPage />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/payment" element={<StripeContainer />} />
           <Route
             path="/baby"
             element={
