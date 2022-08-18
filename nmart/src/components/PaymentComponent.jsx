@@ -1,13 +1,27 @@
 import { Apple, CreditCard, Paypal } from "react-bootstrap-icons";
-import {
-  CardElement,
-  CardNumberElement,
-  CardExpiryElement,
-  CardCvcElement,
-  PaymentElement,
-} from "@stripe/react-stripe-js";
+import { CardElement } from "@stripe/react-stripe-js";
 import "../css/PaymentPage.css";
 import { Link } from "react-router-dom";
+
+const CARD_ELEMENT_OPTIONS = {
+  iconStyle: "solid",
+  style: {
+    base: {
+      iconColor: "##5778a3",
+      color: "#3b999b",
+      fontWeight: 500,
+      fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
+      fontSize: "16px",
+      fontSmoothing: "antialiased",
+      ":-webkit-autofill": { color: "#fce883" },
+      "::placeholder": { color: "#5778a3" },
+    },
+    invalid: {
+      iconColor: "#EE5873",
+      color: "#EE5873",
+    },
+  },
+};
 
 const PaymentComponent = () => {
   return (
@@ -90,10 +104,16 @@ const PaymentComponent = () => {
                 <label for="name">Cardholder Name</label>
                 <input id="name" type="text" placeholder="Full Name"></input>
               </div>
-              {/* <div className="field full">
-                <CardElement />
-              </div> */}
               <div className="field full">
+                <CardElement
+                  options={CARD_ELEMENT_OPTIONS}
+                  className="card-element"
+                />
+              </div>
+              {/* <div className="field full">
+                <PaymentElement />
+              </div> */}
+              {/* <div className="field full">
                 <label for="card-number">Card Number</label>
 
                 <CardNumberElement />
@@ -109,7 +129,7 @@ const PaymentComponent = () => {
 
                   <CardCvcElement />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

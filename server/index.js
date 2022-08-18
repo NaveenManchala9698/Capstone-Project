@@ -18,6 +18,7 @@ app.post("/payment", cors(), async (req, res) => {
       currency: "USD",
       description: "N Mart",
       payment_method: id,
+      /* automatic_payment_methods: { enabled: true }, */
       confirm: true,
     });
     console.log("Payment", payment);

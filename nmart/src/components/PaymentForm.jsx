@@ -8,6 +8,7 @@ import axios from "axios";
 import { useState } from "react";
 import "../css/PaymentPage.css";
 import PaymentComponent from "./PaymentComponent";
+import PaymentSuccess from "./PaymentSuccess";
 
 const PaymentForm = () => {
   const [success, setSuccess] = useState(false);
@@ -48,9 +49,9 @@ const PaymentForm = () => {
           <PaymentComponent />
         </form>
       ) : (
-        <div>
-          <h2>Your Payment was Successful!!</h2>
-        </div>
+        <>
+          <PaymentSuccess />
+        </>
       )}
     </>
   );
