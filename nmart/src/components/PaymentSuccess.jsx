@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../css/PaymentPage.css";
 
 const PaymentSuccess = () => {
@@ -12,6 +13,13 @@ const PaymentSuccess = () => {
           We received your Payment;
           <br /> check your mail for order details.
         </p>
+      </div>
+      <div>
+        <Link to="/">
+          <button className="return-cart-button return-cart-button-link mt-4">
+            Return to Store
+          </button>
+        </Link>
       </div>
     </div>
   );
