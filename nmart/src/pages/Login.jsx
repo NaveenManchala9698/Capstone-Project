@@ -86,7 +86,10 @@ const Login = () => {
       ) : (
         <section className="login">
           <div className="imgContainer">
-            <img src="https://images.pexels.com/photos/4173116/pexels-photo-4173116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <img
+              src="https://images.pexels.com/photos/4173116/pexels-photo-4173116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="loginpage-bg"
+            />
           </div>
           <div className="loginContainer">
             <div className="form">
@@ -112,11 +115,11 @@ const Login = () => {
               <div className="btnContainer">
                 {hasAccount ? (
                   <>
-                    <button onClick={handleLogin}>
+                    <button className="login-button" onClick={handleLogin}>
                       <b>SIGN IN</b>
                     </button>
                     <p>
-                      Dont' have an account ?{" "}
+                      Dont' have an account ?
                       <span onClick={() => setHasAccount(!hasAccount)}>
                         Sign up
                       </span>
@@ -128,7 +131,7 @@ const Login = () => {
                       <b>SIGN UP</b>
                     </button>
                     <p>
-                      Have an Account?{" "}
+                      Have an Account?
                       <span onClick={() => setHasAccount(!hasAccount)}>
                         Sign in
                       </span>

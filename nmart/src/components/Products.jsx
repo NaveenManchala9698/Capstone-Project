@@ -3,11 +3,10 @@ import SingleProduct from "./SingleProduct";
 
 const Products = ({ products }) => {
   return (
-    <Container className="mx-auto mt-3">
+    <Container className="mx-auto mt-5">
       <Row>
         <div className="col-12 text-center ">
-          <h1>All Products</h1>
-          <hr />
+          <h1 className="mb-4">All Products</h1>
         </div>
         {products &&
           products.map((eachProduct) => (

@@ -4,6 +4,10 @@
   display: none;
 }
 
+.card-text {
+  margin-bottom: 0 !important;
+}
+
 .add-button {
   position: relative;
   display: inline-block;

@@ -58,7 +58,7 @@ const ProductDetail = ({ products }) => {
   return (
     <>
       <Navbar />
-      <div style={{ marginTop: "6rem", backgroundColor: "lightgray" }}>
+      <div style={{ marginTop: "6rem" }}>
         <Container className="mx-auto">
           <Row>
             {productDetails && (

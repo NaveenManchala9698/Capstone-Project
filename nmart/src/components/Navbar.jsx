@@ -116,8 +116,6 @@ const Navbar = ({ search }) => {
           </Link>
           <div className="mr-3 my-0 text-center">
             <CartIndicator />
-            {/* <Cart4 />
-            <div>Cart (0)</div> */}
           </div>
           <div className="mr-3 my-0 text-center flag ">
             <Flag />

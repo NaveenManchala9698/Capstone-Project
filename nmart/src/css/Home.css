@@ -12,6 +12,16 @@
 .carousel-description {
   margin-top: 7rem;
   margin-left: 2rem;
+  font-family: "Fredoka", sans-serif;
+}
+
+.carousel-description h1 {
+  font-size: 50px;
+}
+
+.categories-to-bag {
+  margin-top: 3rem;
+  font-family: "Fredoka", sans-serif;
 }
 
 .hero .categories-to-bag img {

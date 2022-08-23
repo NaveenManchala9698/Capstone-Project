@@ -4,7 +4,6 @@
 
 body {
   margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 .container {
@@ -12,7 +11,6 @@ body {
 }
 
 .nav {
-  font-family: "Roboto Condensed", sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,7 +27,8 @@ body {
 }
 
 .site-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-family: "Zen Tokyo Zoo", cursive;
 }
 
 .nav ul {
@@ -38,6 +37,26 @@ body {
   list-style: none;
   display: flex;
   gap: 1rem;
+  font-family: "Fredoka", sans-serif;
+  font-size: 19px;
+}
+
+.nav ul li:hover {
+  /* border-bottom: 5px solid #ec6f66;
+  border-top: 5px solid transparent; */
+}
+
+.nav ul li {
+  position: relative;
+}
+
+.nav > ul > li:not(:last-of-type):hover::after {
+  background-color: #ec6f66;
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  right: 0;
 }
 
 .nav a {
@@ -113,11 +132,13 @@ body {
 .nav-right {
   padding: 15px 0px;
   align-items: center;
-  font-size: 18px;
+  font-size: 19px;
+  font-family: "Fredoka", sans-serif;
 }
 
 .nav-right .nav-icons {
   margin-right: 10px !important;
+  cursor: pointer;
 }
 
 /*  LOGOUT  */
@@ -138,7 +159,6 @@ body {
   color: aliceblue;
   font-size: 1em;
   margin-left: 1em;
-  font-family: "Oswald", sans-serif;
   position: relative;
   overflow: hidden;
   letter-spacing: 2px;
@@ -208,6 +228,7 @@ a {
   width: 170px;
   color: #ec6f66;
   font-weight: bold;
+  border-bottom: 5px solid transparent;
 }
 
 /* REGIONS DROPDOWN */

@@ -74,11 +74,16 @@ const SingleProduct = ({ eachProduct }) => {
           </div>
 
           <div className="d-flex justify-content-between">
-            <Card.Title className="text-left">{eachProduct.name}</Card.Title>
+            <Card.Title
+              className="text-left"
+              style={{ height: "1.5rem", fontSize: "17px" }}
+            >
+              {eachProduct.name}
+            </Card.Title>
           </div>
 
-          <div className="d-flex justify-content-between">
-            <Card.Text className="text-left">
+          <div className="d-flex justify-content-between align-items-baseline">
+            <Card.Text className="text-left product-price">
               <b>{eachProduct.price.formattedValue}</b>
             </Card.Text>
             <button
@@ -87,7 +92,7 @@ const SingleProduct = ({ eachProduct }) => {
                 dispatch(addToCart(product));
               }}
             >
-              <Cart4 className="mx-2" />
+              <Cart4 className="mx-2" style={{ fontSize: "25px" }} />
               ADD
             </button>
           </div>
