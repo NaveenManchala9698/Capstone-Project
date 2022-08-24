@@ -7,14 +7,14 @@ const CARD_ELEMENT_OPTIONS = {
   iconStyle: "solid",
   style: {
     base: {
-      iconColor: "##5778a3",
+      /* iconColor: "##5778a3",
       color: "#3b999b",
       fontWeight: 500,
       fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
       fontSize: "16px",
       fontSmoothing: "antialiased",
       ":-webkit-autofill": { color: "#fce883" },
-      "::placeholder": { color: "#5778a3" },
+      "::placeholder": { color: "#5778a3" }, */
     },
     invalid: {
       iconColor: "#EE5873",
@@ -101,6 +101,13 @@ const PaymentComponent = () => {
                 <h4>Credit Card Info</h4>
               </div>
               <div className="field full">
+                <img
+                  src="https://assets.stickpng.com/images/6220ac7d912013c51947f9c6.png"
+                  alt="stripe"
+                  width="300px"
+                ></img>
+              </div>
+              <div className="field full">
                 <label for="name">Cardholder Name</label>
                 <input id="name" type="text" placeholder="Full Name"></input>
               </div>
@@ -110,26 +117,6 @@ const PaymentComponent = () => {
                   className="card-element"
                 />
               </div>
-              {/* <div className="field full">
-                <PaymentElement />
-              </div> */}
-              {/* <div className="field full">
-                <label for="card-number">Card Number</label>
-
-                <CardNumberElement />
-              </div>
-              <div className="flex justify-space-between">
-                <div className="field half">
-                  <label for="exp.month">Exp. Month</label>
-
-                  <CardExpiryElement />
-                </div>
-                <div className="field half">
-                  <label for="cvc">CVC Number</label>
-
-                  <CardCvcElement />
-                </div>
-              </div> */}
             </div>
           </div>
         </div>

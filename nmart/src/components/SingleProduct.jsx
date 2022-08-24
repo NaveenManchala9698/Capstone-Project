@@ -76,7 +76,7 @@ const SingleProduct = ({ eachProduct }) => {
           <div className="d-flex justify-content-between">
             <Card.Title
               className="text-left"
-              style={{ height: "1.5rem", fontSize: "17px" }}
+              style={{ height: "2rem", fontSize: "16px" }}
             >
               {eachProduct.name}
             </Card.Title>

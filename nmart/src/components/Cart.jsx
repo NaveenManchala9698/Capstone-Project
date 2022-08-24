@@ -22,8 +22,11 @@ const Cart = () => {
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
 
   return (
-    <Container className="mx-auto" style={{ marginTop: "7rem" }}>
-      <h1>Shopping Bag</h1>
+    <Container
+      className="mx-auto shopping-bag-container"
+      style={{ marginTop: "7rem" }}
+    >
+      <h1>SHOPPING BAG</h1>
       <div>{cartItems.length === 0 && <div>Cart is Empty</div>}</div>
       <div>
         <Row>
@@ -157,7 +160,7 @@ const Cart = () => {
                 <Col md={7} className="text-left">
                   <b>Apply Coupons</b>
                 </Col>
-                <Col md={3}>
+                <Col md={2}>
                   <button className="coupon-button">APPLY</button>
                 </Col>
               </Row>

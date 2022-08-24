@@ -110,7 +110,7 @@ const Hero = () => {
         </Carousel>
         <div className="categories-to-bag">
           <h1>CATEGORIES TO BAG</h1>
-          <Row className="mt-3">
+          <Row className="mt-5">
             <Col xs={6} md={3} lg={2}>
               <div className="text-center">
                 <img

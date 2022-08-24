@@ -24,6 +24,7 @@ body {
   align-items: center;
   gap: 2rem;
   padding: 0 1rem;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .site-title {
@@ -156,7 +157,7 @@ body {
 }
 
 .logout {
-  color: aliceblue;
+  color: black;
   font-size: 1em;
   margin-left: 1em;
   position: relative;
@@ -174,7 +175,7 @@ body {
   width: 35px;
   height: 40px;
   margin: 10px 0px;
-  background-color: rgb(5, 5, 5);
+  background-color: whitesmoke;
   transition: width 0.35s;
   -webkit-transition: width 0.35s;
   overflow: hidden;
@@ -235,32 +236,24 @@ a {
 
 .sub-menu-2 {
   display: none;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .nav .nav-right .nav-icons .flag:hover .sub-menu-2 {
   display: block;
   position: absolute;
   z-index: 1;
-  background-color: rgb(223, 220, 220);
-  color: black;
+  background-color: white;
+  color: gray;
+  right: 30px;
 }
 
 .nav .nav-right .nav-icons .flag:hover .sub-menu-2 a {
   margin: 10px;
-  width: 180px;
+  width: 250px;
 }
 
-/* SUB-MENU 3 */
-
-.sub-menu-3 {
-  display: none;
-}
-
-.nav .nav-right .nav-icons .flag .sub-menu-2:hover .sub-menu-3 {
-  display: block;
-  position: absolute;
-  z-index: 3;
-  background-color: rgb(223, 220, 220);
-  color: black;
+.nav .nav-right .nav-icons .flag:hover .sub-menu-2 a:hover {
+  color: #ec6f66;
+  font-weight: bold;
 }

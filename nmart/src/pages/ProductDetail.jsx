@@ -1,3 +1,4 @@
+/* eslint-disable no-lone-blocks */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect } from "react";
 import { useState } from "react";
@@ -5,8 +6,10 @@ import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import porductsJson from "../data/products.json";
 import "../css/ProductDetails.css";
-import { Cart3, CircleFill, Heart } from "react-bootstrap-icons";
+import { Cart3, CircleFill, Heart, HeartFill } from "react-bootstrap-icons";
 import { useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addFavourite, addToCart, removeFavourite } from "../redux/actions";
 
 const ProductDetail = ({ products }) => {
   const [productDetails, setProductDetails] = useState([]);
@@ -14,6 +17,21 @@ const ProductDetail = ({ products }) => {
 
   const params = useParams();
   const productID = params.productID;
+
+  /* const favourites = useSelector((state) => state.favouritesReducer.favourites);
+
+  const dispatch = useDispatch();
+
+  console.log(favourites);
+  const isFav = favourites.find((p) => p.code === eachProduct.code)
+    ? true
+    : false;
+
+  const toggleFavourite = () => {
+    isFav
+      ? dispatch(removeFavourite(eachProduct))
+      : dispatch(addFavourite(eachProduct));
+  }; */
 
   useEffect(() => {
     fetchProductDetails();
@@ -58,7 +76,7 @@ const ProductDetail = ({ products }) => {
   return (
     <>
       <Navbar />
-      <div style={{ marginTop: "6rem" }}>
+      <div className="product-details" style={{ marginTop: "6rem" }}>
         <Container className="mx-auto">
           <Row>
             {productDetails && (
@@ -92,21 +110,11 @@ const ProductDetail = ({ products }) => {
                   </div>
 
                   <div className="mt-3">
-                    <div class="dropdown">
-                      <button
-                        class="btn btn-primary dropdown-toggle"
-                        type="button"
-                        id="dropdownMenuButton"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        More Colors
-                      </button>
-                      <div
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton"
-                      >
+                    <label class="dropdown">
+                      <div class="dd-button">More Colors</div>
+                      <input type="checkbox" class="dd-input" id="test"></input>
+
+                      <ul class="dd-menu">
                         {productDetails.articlesList &&
                           productDetails.articlesList.map((eachColor) => (
                             <li className="px-3 py-1">
@@ -120,25 +128,25 @@ const ProductDetail = ({ products }) => {
                               {eachColor.color.text}
                             </li>
                           ))}
-                      </div>
-                    </div>
+                      </ul>
+                    </label>
                   </div>
 
-                  <div className="mt-3 mb-4">
-                    <h5>
+                  <div className="mt-3 mb-5">
+                    <h5 className="mb-3">
                       <b>SELECT SIZE: </b>
                     </h5>
                     <a href="#" class="size-buttons">
-                      S
+                      <b>S</b>
                     </a>
                     <a href="#" class="size-buttons">
-                      M
+                      <b>M</b>
                     </a>
                     <a href="#" class="size-buttons">
-                      L
+                      <b>L</b>
                     </a>
                     <a href="#" class="size-buttons">
-                      XL
+                      <b>XL</b>
                     </a>
                   </div>
 
@@ -152,6 +160,21 @@ const ProductDetail = ({ products }) => {
                     <div>
                       <a href="#" class="wishlist_btn">
                         <Heart className="mx-2" />
+                        {/*  {isFav ? (
+                          <HeartFill
+                            color="red"
+                            size={25}
+                            className="me-4 my-auto mx-2"
+                            onClick={toggleFavourite}
+                          />
+                        ) : (
+                          <Heart
+                            color="black"
+                            size={25}
+                            className="me-4 my-auto mx-2"
+                            onClick={toggleFavourite}
+                          />
+                        )} */}
                         WISHLIST
                       </a>
                     </div>
@@ -197,5 +220,21 @@ const ProductDetail = ({ products }) => {
     </>
   );
 };
+
+{
+  /* {productDetails.articlesList &&
+                          productDetails.articlesList.map((eachColor) => (
+                            <li className="px-3 py-1">
+                              <span className="mr-2">
+                                <CircleFill
+                                  style={{
+                                    color: `${eachColor.color.rgbColor}`,
+                                  }}
+                                />
+                              </span>
+                              {eachColor.color.text}
+                            </li>
+                          ))} */
+}
 
 export default ProductDetail;

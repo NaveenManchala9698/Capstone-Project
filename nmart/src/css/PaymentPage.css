@@ -1,7 +1,7 @@
 body {
   background: #f2f4f7;
   color: #28333b;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   padding: 0px 25px;
 }
@@ -197,6 +197,7 @@ body {
   border: 2px solid #e8ebed;
   padding: 12px 5px;
   border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Success Page */
@@ -205,6 +206,7 @@ body {
   text-align: center;
   padding: 40px 0;
   background: #ebf0f5;
+  font-family: "Montserrat", sans-serif;
 }
 
 .success-body h1 {

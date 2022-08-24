@@ -10,9 +10,11 @@ const Favourites = () => {
       <Row>
         {favourites &&
           favourites.map((eachFavourite, i) => (
-            <Col md={3} key={i}>
-              <SingleProduct eachProduct={eachFavourite} />
-            </Col>
+            <>
+              <Col md={3} key={i}>
+                <SingleProduct eachProduct={eachFavourite} />
+              </Col>
+            </>
           ))}
       </Row>
     </Container>

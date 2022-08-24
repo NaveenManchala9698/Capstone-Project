@@ -21,7 +21,11 @@
 
 .categories-to-bag {
   margin-top: 3rem;
-  font-family: "Fredoka", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.categories-to-bag .text-center img {
+  cursor: pointer;
 }
 
 .hero .categories-to-bag img {
@@ -33,4 +37,8 @@
 .categories-to-bag .category-text {
   text-align: center;
   margin-top: 0.5rem;
+}
+
+.all-products {
+  font-family: "Montserrat", sans-serif;
 }

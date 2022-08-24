@@ -131,14 +131,6 @@ const Navbar = ({ search }) => {
                       {eachRegion.region}
                     </a>
                   ))}
-                <div className="sub-menu-3">
-                  {regionsJson &&
-                    regionsJson.map((eachRegion) => (
-                      <a key={eachRegion.countries[0].code} href="/">
-                        {eachRegion.countries[0].name}
-                      </a>
-                    ))}
-                </div>
               </div>
             </div>
           </div>

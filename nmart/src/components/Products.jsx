@@ -6,7 +6,7 @@ const Products = ({ products }) => {
     <Container className="mx-auto mt-5">
       <Row>
         <div className="col-12 text-center ">
-          <h1 className="mb-4">All Products</h1>
+          <h1 className="mb-5 all-products">ALL PRODUCTS</h1>
         </div>
         {products &&
           products.map((eachProduct) => (
