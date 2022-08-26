@@ -26,7 +26,7 @@ function App() {
         {
           headers: {
             "X-RapidAPI-Key":
-              "d5ba9e1f02msha6b0efd73d5dbdbp13095bjsn50fc3413fc7d",
+              "fe1f236124msh1767e0572a8242fp16034djsn23e3142518a1",
             "X-RapidAPI-Host": "apidojo-hm-hennes-mauritz-v1.p.rapidapi.com",
           },
         }

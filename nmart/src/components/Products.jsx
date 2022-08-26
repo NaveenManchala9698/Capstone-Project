@@ -10,7 +10,7 @@ const Products = ({ products }) => {
         </div>
         {products &&
           products.map((eachProduct) => (
-            <Col key={eachProduct.code} md={3}>
+            <Col key={eachProduct.code} xs={12} sm={6} md={3}>
               <SingleProduct eachProduct={eachProduct} />
             </Col>
           ))}

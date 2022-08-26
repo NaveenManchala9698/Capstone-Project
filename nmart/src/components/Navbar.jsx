@@ -40,55 +40,57 @@ const Navbar = ({ search }) => {
           NMart
         </a>
       </div>
-      <ul>
-        <li>
-          <a href="/men">MEN</a>
-        </li>
-        <li>
-          <a href="/women">WOMEN</a>
-        </li>
-        <li>
-          <a href="/kids">KIDS</a>
-        </li>
+      <div>
+        <ul>
+          <li>
+            <a href="/men">MEN</a>
+          </li>
+          <li>
+            <a href="/women">WOMEN</a>
+          </li>
+          <li>
+            <a href="/kids">KIDS</a>
+          </li>
 
-        <li>
-          <a href="#">
-            ALL CATEGORIES
-            <CaretDownFill />
-          </a>
-          <div className="sub-menu">
-            <ul>
-              <Link to="/baby">
-                <li>Baby</li>
-              </Link>
-              <Link to="/giftGuide">
-                <li>Gift Guide</li>
-              </Link>
-              <Link to="/women">
-                <li>Women</li>
-              </Link>
-              <Link to="/divided">
-                <li>Divided</li>
-              </Link>
-              <Link to="/men">
-                <li>Men</li>
-              </Link>
-              <Link to="/kids">
-                <li>Kids</li>
-              </Link>
-              <Link to="/home">
-                <li>H&M Home</li>
-              </Link>
-              <Link to="/outlet">
-                <li>Outlet</li>
-              </Link>
-              <Link to="/sale">
-                <li>SALE</li>
-              </Link>
-            </ul>
-          </div>
-        </li>
-      </ul>
+          <li>
+            <a href="#">
+              ALL CATEGORIES
+              <CaretDownFill />
+            </a>
+            <div className="sub-menu">
+              <ul>
+                <Link to="/baby">
+                  <li>Baby</li>
+                </Link>
+                <Link to="/giftGuide">
+                  <li>Gift Guide</li>
+                </Link>
+                <Link to="/women">
+                  <li>Women</li>
+                </Link>
+                <Link to="/divided">
+                  <li>Divided</li>
+                </Link>
+                <Link to="/men">
+                  <li>Men</li>
+                </Link>
+                <Link to="/kids">
+                  <li>Kids</li>
+                </Link>
+                <Link to="/home">
+                  <li>H&M Home</li>
+                </Link>
+                <Link to="/outlet">
+                  <li>Outlet</li>
+                </Link>
+                <Link to="/sale">
+                  <li>SALE</li>
+                </Link>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
       <div className="search-box">
         <SearchBar />
         {/* <Link to="/RandomPage">

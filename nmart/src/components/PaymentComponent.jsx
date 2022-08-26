@@ -102,7 +102,7 @@ const PaymentComponent = () => {
               </div>
               <div className="field full">
                 <img
-                  src="https://assets.stickpng.com/images/6220ac7d912013c51947f9c6.png"
+                  src="https://lostbarncoffee.co.uk/trade/img/cms/stripe.png"
                   alt="stripe"
                   width="300px"
                 ></img>

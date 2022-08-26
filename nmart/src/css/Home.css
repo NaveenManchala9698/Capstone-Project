@@ -17,6 +17,7 @@
 
 .carousel-description h1 {
   font-size: 50px;
+  font-weight: 700;
 }
 
 .categories-to-bag {
@@ -41,4 +42,24 @@
 
 .all-products {
   font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 1400px) {
+  .hero {
+    margin-top: 10rem !important;
+  }
+}
+@media (max-width: 1200px) {
+  .hero {
+    margin-top: 14rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 18rem !important;
+  }
 }

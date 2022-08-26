@@ -50,7 +50,7 @@ const ProductDetail = ({ products }) => {
         method: "GET",
         headers: {
           "X-RapidAPI-Key":
-            "d5ba9e1f02msha6b0efd73d5dbdbp13095bjsn50fc3413fc7d",
+            "fe1f236124msh1767e0572a8242fp16034djsn23e3142518a1",
           "X-RapidAPI-Host": "apidojo-hm-hennes-mauritz-v1.p.rapidapi.com",
         },
       };
@@ -81,7 +81,7 @@ const ProductDetail = ({ products }) => {
           <Row>
             {productDetails && (
               <>
-                <Col md={6} className="mt-5 ">
+                <Col sm={12} md={6} className="mt-5 ">
                   <img
                     src={productImageUrl}
                     alt={porductsJson.results[0].name}
@@ -89,7 +89,7 @@ const ProductDetail = ({ products }) => {
                     width="400px"
                   />
                 </Col>
-                <Col md={6} className="mt-5 text-left">
+                <Col sm={12} md={6} className="mt-5 text-left">
                   <h1>
                     <b>{porductsJson.results[0].brandName}</b>
                   </h1>
@@ -110,11 +110,15 @@ const ProductDetail = ({ products }) => {
                   </div>
 
                   <div className="mt-3">
-                    <label class="dropdown">
-                      <div class="dd-button">More Colors</div>
-                      <input type="checkbox" class="dd-input" id="test"></input>
+                    <label className="dropdown">
+                      <div className="dd-button">More Colors</div>
+                      <input
+                        type="checkbox"
+                        className="dd-input"
+                        id="test"
+                      ></input>
 
-                      <ul class="dd-menu">
+                      <ul className="dd-menu">
                         {productDetails.articlesList &&
                           productDetails.articlesList.map((eachColor) => (
                             <li className="px-3 py-1">
@@ -136,21 +140,21 @@ const ProductDetail = ({ products }) => {
                     <h5 className="mb-3">
                       <b>SELECT SIZE: </b>
                     </h5>
-                    <a href="#" class="size-buttons">
+                    <a href="#" className="size-buttons">
                       <b>S</b>
                     </a>
-                    <a href="#" class="size-buttons">
+                    <a href="#" className="size-buttons">
                       <b>M</b>
                     </a>
-                    <a href="#" class="size-buttons">
+                    <a href="#" className="size-buttons">
                       <b>L</b>
                     </a>
-                    <a href="#" class="size-buttons">
+                    <a href="#" className="size-buttons">
                       <b>XL</b>
                     </a>
                   </div>
 
-                  <div className="d-flex mt-3">
+                  <div className="mt-3 cartwish-btns">
                     <div>
                       <a href="#" className="cart_btn">
                         <Cart3 className="mx-2" />
@@ -158,23 +162,8 @@ const ProductDetail = ({ products }) => {
                       </a>
                     </div>
                     <div>
-                      <a href="#" class="wishlist_btn">
+                      <a href="#" className="wishlist_btn">
                         <Heart className="mx-2" />
-                        {/*  {isFav ? (
-                          <HeartFill
-                            color="red"
-                            size={25}
-                            className="me-4 my-auto mx-2"
-                            onClick={toggleFavourite}
-                          />
-                        ) : (
-                          <Heart
-                            color="black"
-                            size={25}
-                            className="me-4 my-auto mx-2"
-                            onClick={toggleFavourite}
-                          />
-                        )} */}
                         WISHLIST
                       </a>
                     </div>

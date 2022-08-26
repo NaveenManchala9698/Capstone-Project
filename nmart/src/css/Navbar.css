@@ -257,3 +257,9 @@ a {
   color: #ec6f66;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .search-box {
+    display: none;
+  }
+}
