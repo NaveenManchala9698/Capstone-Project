@@ -141,21 +141,22 @@ const Hero = () => {
             <Col xs={6} md={3} lg={2}>
               <div className="text-center">
                 <img
-                  src="https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="Shoes"
+                  src="https://images.pexels.com/photos/1470677/pexels-photo-1470677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Shirts"
                 ></img>
-                <div className="category-text">Sports Shoes</div>
+                <div className="category-text">Infant Essentials</div>
               </div>
             </Col>
             <Col xs={6} md={3} lg={2}>
               <div className="text-center">
                 <img
-                  src="https://images.pexels.com/photos/1362724/pexels-photo-1362724.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Dresses"
+                  src="https://images.pexels.com/photos/35188/child-childrens-baby-children-s.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Shirts"
                 ></img>
-                <div className="category-text">Dresses</div>
+                <div className="category-text">Kids Wear</div>
               </div>
             </Col>
+
             <Col xs={6} md={3} lg={2}>
               <div className="text-center">
                 <img
@@ -170,19 +171,19 @@ const Hero = () => {
             <Col xs={6} md={3} lg={2}>
               <div className="text-center">
                 <img
-                  src="https://images.pexels.com/photos/1470677/pexels-photo-1470677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="Shirts"
+                  src="https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Shoes"
                 ></img>
-                <div className="category-text">Infant Essentials</div>
+                <div className="category-text">Sports Shoes</div>
               </div>
             </Col>
             <Col xs={6} md={3} lg={2}>
               <div className="text-center">
                 <img
-                  src="https://images.pexels.com/photos/35188/child-childrens-baby-children-s.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="Shirts"
+                  src="https://images.pexels.com/photos/1362724/pexels-photo-1362724.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Dresses"
                 ></img>
-                <div className="category-text">Kids Wear</div>
+                <div className="category-text">Dresses</div>
               </div>
             </Col>
             <Col xs={6} md={3} lg={2}>
@@ -215,10 +216,10 @@ const Hero = () => {
             <Col xs={6} md={3} lg={2}>
               <div className="text-center">
                 <img
-                  src="https://images.pexels.com/photos/6914302/pexels-photo-6914302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Shirts"
                 ></img>
-                <div className="category-text">Kurtas</div>
+                <div className="category-text">Home Decor</div>
               </div>
             </Col>
           </Row>

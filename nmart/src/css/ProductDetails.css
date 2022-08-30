@@ -184,3 +184,33 @@
     padding: 15px 15px;
   }
 }
+
+.new_tag {
+  background: #9a5abf;
+  display: block;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px 20px;
+  position: absolute;
+  top: -8px;
+  right: 70px;
+  border-radius: 5px 0 0 5px;
+}
+.new_tag .block1 {
+  height: 42px;
+  transform: skew(0deg, 65deg);
+  background: #ac7ac9;
+  padding: 0;
+  width: 12px;
+  top: 13px;
+  right: -12px;
+  border-radius: 0;
+}
+.new_tag .block2 {
+  background: #8042a6;
+  z-index: -1;
+  top: 37px;
+  right: -12px;
+  height: 16px;
+  transform: skew(0deg, 28deg);
+}

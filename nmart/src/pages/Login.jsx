@@ -4,6 +4,7 @@ import { auth } from "firebase";
 import { useState, useEffect } from "react";
 import "../css/Login.css";
 import Home from "./Home";
+import { Facebook, Google, Twitter } from "react-bootstrap-icons";
 
 const Login = () => {
   const [user, setUser] = useState("");
@@ -138,6 +139,17 @@ const Login = () => {
                     </p>
                   </>
                 )}
+              </div>
+              <div className="media-container">
+                <div className="share-btn">
+                  <Twitter className="share_twitter" />
+                </div>
+                <div className="share-btn">
+                  <Facebook className="share_fb" />
+                </div>
+                <div className="share-btn">
+                  <Google className="share_google" />
+                </div>
               </div>
             </div>
           </div>

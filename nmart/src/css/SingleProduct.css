@@ -12,14 +12,21 @@
   position: relative;
   display: inline-block;
   font-weight: bold;
-  padding: 0.25em 0;
+  padding: 0.25em;
+  border-radius: 2px;
+  border-width: 0px;
   text-decoration: none;
-  color: rgb(255, 63, 108);
-  border: none;
-  background-color: inherit;
+  background-color: rgb(255, 63, 108);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
-.add-button:before {
+.add-button:hover {
+  background-color: rgb(254, 89, 127);
+  color: rgb(255, 255, 255);
+}
+
+/* .add-button:before {
   position: absolute;
   content: "";
   width: 100%;
@@ -34,7 +41,7 @@
 .add-button:hover:before {
   top: -webkit-calc(100% - 3px);
   top: calc(100% - 3px);
-}
+} */
 
 .whole-product {
   margin-bottom: 1rem;

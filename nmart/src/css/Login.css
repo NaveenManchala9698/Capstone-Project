@@ -132,3 +132,40 @@
   color: red;
   font-size: 16px;
 }
+
+.share-btn {
+  margin-right: 2.5rem;
+  display: inline-block;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 23px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+  transition: 0.3s;
+}
+
+.share-btn:hover {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.28);
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.share_twitter {
+  color: #03a9f4;
+}
+
+.share_fb {
+  color: #4966a0;
+}
+
+.share_google {
+  color: #ea4158;
+}

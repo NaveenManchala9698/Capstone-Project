@@ -10,6 +10,7 @@ import { Cart3, CircleFill, Heart, HeartFill } from "react-bootstrap-icons";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addFavourite, addToCart, removeFavourite } from "../redux/actions";
+import Footer from "../components/Footer";
 
 const ProductDetail = ({ products }) => {
   const [productDetails, setProductDetails] = useState([]);
@@ -77,7 +78,7 @@ const ProductDetail = ({ products }) => {
     <>
       <Navbar />
       <div className="product-details" style={{ marginTop: "6rem" }}>
-        <Container className="mx-auto">
+        <Container className="mx-auto mb-4">
           <Row>
             {productDetails && (
               <>
@@ -87,7 +88,13 @@ const ProductDetail = ({ products }) => {
                     alt={porductsJson.results[0].name}
                     height="600px"
                     width="400px"
+                    style={{ position: "relative" }}
                   />
+                  <div class="new_tag">
+                    New
+                    <div class="new_tag block1"></div>
+                    <div class="new_tag block2"></div>
+                  </div>
                 </Col>
                 <Col sm={12} md={6} className="mt-5 text-left">
                   <h1>
@@ -95,9 +102,14 @@ const ProductDetail = ({ products }) => {
                   </h1>
                   <div className="d-flex">
                     <h4>{productDetails.name}</h4>
-                    <h4 className="text-warning ml-2">
+                    {/* <h4 className="text-warning ml-2">
                       <b>(New Arrival)</b>
-                    </h4>
+                    </h4> */}
+                    {/* <div class="new_tag">
+                      New
+                      <div class="new_tag block1"></div>
+                      <div class="new_tag block2"></div>
+                    </div> */}
                   </div>
                   <hr />
 
@@ -206,24 +218,9 @@ const ProductDetail = ({ products }) => {
           </Row>
         </Container>
       </div>
+      <Footer />
     </>
   );
 };
-
-{
-  /* {productDetails.articlesList &&
-                          productDetails.articlesList.map((eachColor) => (
-                            <li className="px-3 py-1">
-                              <span className="mr-2">
-                                <CircleFill
-                                  style={{
-                                    color: `${eachColor.color.rgbColor}`,
-                                  }}
-                                />
-                              </span>
-                              {eachColor.color.text}
-                            </li>
-                          ))} */
-}
 
 export default ProductDetail;

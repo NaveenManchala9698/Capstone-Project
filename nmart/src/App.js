@@ -51,9 +51,7 @@ function App() {
           <Route path="/favourites" element={<FavouritesPage />} />
           <Route
             path="/product/:productID"
-            element={
-              <ProductDetail products={products} eachProduct={products} />
-            }
+            element={<ProductDetail products={products} />}
           />
           <Route path="/RandomPage" element={<SearchedCategoryPage />} />
           <Route path="/cart" element={<CartPage />} />

@@ -23,7 +23,7 @@ const Cart = () => {
 
   return (
     <Container
-      className="mx-auto shopping-bag-container"
+      className="mx-auto shopping-bag-container mb-5"
       style={{ marginTop: "7rem" }}
     >
       <h1>SHOPPING BAG</h1>
