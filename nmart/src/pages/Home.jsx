@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import Navbar2 from "../components/Navbar2";
 import Products from "../components/Products";
-import Navbar2 from "./Navbar2";
 
 const Home = ({ products }) => {
   // GET PRODUCTS
@@ -41,8 +41,8 @@ const Home = ({ products }) => {
 
   return (
     <>
-      {/* <Navbar2 search={fetchProducts} /> */}
-      <Navbar search={fetchProducts} />
+      {/* <Navbar search={fetchProducts} /> */}
+      <Navbar2 />
       <Hero />
       <Products products={products} />
       <Footer />

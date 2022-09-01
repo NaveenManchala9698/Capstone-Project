@@ -9,8 +9,7 @@ import {
   Cart4,
   Flag,
   Heart,
-  PersonFill,
-  Search,
+  Person,
 } from "react-bootstrap-icons";
 import regionsJson from "../data/regions.json";
 import { Link } from "react-router-dom";
@@ -93,21 +92,11 @@ const Navbar = ({ search }) => {
       </div>
       <div className="search-box">
         <SearchBar />
-        {/* <Link to="/RandomPage">
-          <Search className="search-icon mt-2" onClick={() => search(query)} />
-        </Link>
-        <input
-          type="text"
-          value={query}
-          onChange={handleChange}
-          className="input-search"
-          placeholder="Search..."
-        /> */}
       </div>
       <div className="nav-right d-flex">
         <div className="nav-icons d-flex mx-4 ">
           <div className="mr-3 my-0 text-center">
-            <PersonFill /> <div>Profile</div>
+            <Person /> <div>Profile</div>
           </div>
 
           <Link to="/favourites" className="p-0">
