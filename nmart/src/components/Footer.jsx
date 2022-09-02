@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
       </section>
 
-      {/* <section className="ft-social">
+      <section className="ft-social">
         <ul className="ft-social-list">
           <li>
             <a href="#">
@@ -93,7 +93,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-      </section> */}
+      </section>
 
       <section className="ft-legal">
         <ul className="ft-legal-list">

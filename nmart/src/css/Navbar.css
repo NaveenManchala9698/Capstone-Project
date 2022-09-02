@@ -71,6 +71,7 @@ body {
 
 .search__container {
   padding-top: 0.5rem;
+  margin-left: 6rem;
 }
 
 .search__input {
@@ -126,6 +127,7 @@ body {
 }
 
 .nav-right {
+  margin-left: 1rem;
   padding: 15px 0px;
   align-items: center;
   font-size: 19px;
@@ -153,11 +155,11 @@ body {
 
 .logout {
   color: black;
-  font-size: 1em;
+  font-size: 0.7rem;
   margin-left: 1em;
   position: relative;
   overflow: hidden;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   opacity: 0;
   transition: opacity 0.45s;
   -webkit-transition: opacity 0.35s;
@@ -177,7 +179,7 @@ body {
 }
 
 .logout-div a:hover {
-  width: 140px;
+  width: 100px;
 }
 
 a:hover .logout {
@@ -253,8 +255,8 @@ a {
   font-weight: bold;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .search-box {
     display: none;
   }
-}
+} */
