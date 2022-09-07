@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Chatbot1 from "../components/ChatBot1";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
@@ -45,6 +46,7 @@ const Home = ({ products }) => {
       <Navbar2 />
       <Hero />
       <Products products={products} />
+      <Chatbot1 />
       <Footer />
     </>
   );

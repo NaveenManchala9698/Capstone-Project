@@ -1,0 +1,15 @@
+.chatBot-container .chat-icon {
+  font-size: 3rem;
+  position: fixed;
+  top: 40rem;
+  right: 2rem;
+  z-index: 2;
+}
+
+.chatBot {
+  float: right;
+  position: fixed;
+  top: 9rem;
+  right: 4rem;
+  display: none;
+}
