@@ -1,15 +1,27 @@
-.chatBot-container .chat-icon {
+.chatBot-container .botIconContainer {
+  border-radius: 50%;
+  background: rgb(34, 129, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 129, 195, 0.9026961126247374) 0%,
+    rgba(253, 45, 238, 0.6842087176667542) 100%
+  );
   font-size: 3rem;
   position: fixed;
-  top: 40rem;
-  right: 2rem;
+  top: 38rem;
+  right: 3rem;
   z-index: 2;
+}
+
+.chatBot-container .botIconContainer img {
+  /* height: 50px; */
+  width: 75px;
+  padding: 15px;
 }
 
 .chatBot {
   float: right;
   position: fixed;
-  top: 9rem;
-  right: 4rem;
-  display: none;
+  top: 8rem;
+  right: 6rem;
 }

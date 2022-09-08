@@ -9,14 +9,14 @@ const Hero = () => {
         <Carousel>
           <Carousel.Item>
             <Row>
-              <Col md={8}>
+              <Col lg={8} md={7} xs={12}>
                 <img
                   className="d-block w-100"
                   src="https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="First slide"
                 />
               </Col>
-              <Col xs={4}>
+              <Col lg={4} md={5} xs={0}>
                 <div className="carousel-description">
                   <div>
                     <h1>Travel Essentials</h1>
@@ -34,14 +34,14 @@ const Hero = () => {
           </Carousel.Item>
           <Carousel.Item>
             <Row>
-              <Col xs={8}>
+              <Col lg={8} md={7} xs={12}>
                 <img
                   className="d-block w-100"
                   src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Second slide"
                 />
               </Col>
-              <Col xs={4}>
+              <Col lg={4} md={5} xs={0}>
                 <div className="carousel-description">
                   <div>
                     <h1>Ladies Fashion</h1>
@@ -59,14 +59,14 @@ const Hero = () => {
           </Carousel.Item>
           <Carousel.Item>
             <Row>
-              <Col xs={8}>
+              <Col lg={8} md={7} xs={12}>
                 <img
                   className="d-block w-100"
                   src="https://images.pexels.com/photos/336372/pexels-photo-336372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Third slide"
                 />
               </Col>
-              <Col xs={4}>
+              <Col lg={4} md={5} xs={0}>
                 <div className="carousel-description">
                   <div>
                     <h1>HANDBAGS</h1>
@@ -84,14 +84,14 @@ const Hero = () => {
           </Carousel.Item>
           <Carousel.Item>
             <Row>
-              <Col xs={8}>
+              <Col lg={8} md={7} xs={12}>
                 <img
                   className="d-block w-100"
                   src="https://images.pexels.com/photos/1103833/pexels-photo-1103833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Third slide"
                 />
               </Col>
-              <Col xs={4}>
+              <Col lg={4} md={5} xs={0}>
                 <div className="carousel-description">
                   <div>
                     <h1>ActiveWear</h1>

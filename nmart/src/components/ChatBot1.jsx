@@ -1,4 +1,5 @@
-import { ChatDotsFill } from "react-bootstrap-icons";
+import { useState } from "react";
+import { ChatDots, ChatDotsFill } from "react-bootstrap-icons";
 import ChatBot from "react-simple-chatbot";
 import "../css/ChatBot.css";
 
@@ -62,20 +63,38 @@ const Chatbot1 = () => {
     },
   ];
 
+  const [isVisible, setIsVisible] = useState(false);
+
   const toggleChatBot = () => {
-    let x = document.getElementsByClassName("chatBot");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
+    setIsVisible((chat) => !chat);
   };
 
   return (
     <>
       <div className="chatBot-container">
-        <ChatDotsFill className="chat-icon" onClick="toggleChatBot()" />
-        <ChatBot steps={steps} className="chatBot" />
+        {/* <ChatDotsFill className="chat-icon" onClick={toggleChatBot} /> */}
+
+        {isVisible ? (
+          <div className="botIconContainer" onClick={toggleChatBot}>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/OOjs_UI_icon_close.svg/1200px-OOjs_UI_icon_close.svg.png"
+              alt="bot"
+            ></img>
+          </div>
+        ) : (
+          <div className="botIconContainer" onClick={toggleChatBot}>
+            <img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/chatbot-icon.png"
+              alt="close"
+            ></img>
+          </div>
+        )}
+
+        <ChatBot
+          steps={steps}
+          className="chatBot"
+          style={{ visibility: isVisible ? "visible" : "hidden" }}
+        />
       </div>
     </>
   );

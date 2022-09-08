@@ -260,3 +260,8 @@ a {
     display: none;
   }
 } */
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}

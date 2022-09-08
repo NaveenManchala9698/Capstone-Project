@@ -39,8 +39,15 @@ const Navbar2 = ({ search }) => {
           NMart
         </a>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Toggle
+        aria-controls="basic-navbar-nav"
+        className="navbar-toggle collapsed"
+      />
+
+      <Navbar.Collapse
+        id="basic-navbar-nav"
+        className="navbar-collapse collapse"
+      >
         <div>
           <ul>
             <li>

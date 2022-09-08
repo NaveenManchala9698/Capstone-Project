@@ -4,6 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import SingleProduct from "../components/SingleProduct";
 import { SpinnerDotted } from "spinners-react";
+import Footer from "../components/Footer";
 
 const SearchedCategoryPage = ({ categoryName }) => {
   // GET PRODUCTS
@@ -63,6 +64,7 @@ const SearchedCategoryPage = ({ categoryName }) => {
             ))}
         </Row>
       </Container>
+      <Footer />
     </>
   );
 };
