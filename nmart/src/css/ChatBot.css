@@ -6,7 +6,7 @@
     rgba(34, 129, 195, 0.9026961126247374) 0%,
     rgba(253, 45, 238, 0.6842087176667542) 100%
   );
-  font-size: 3rem;
+  /* font-size: 3rem; */
   position: fixed;
   top: 38rem;
   right: 3rem;
@@ -16,7 +16,7 @@
 .chatBot-container .botIconContainer img {
   /* height: 50px; */
   width: 75px;
-  padding: 15px;
+  padding: 12px;
 }
 
 .chatBot {

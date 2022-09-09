@@ -90,10 +90,13 @@ const ProductDetail = ({ products }) => {
                     width="400px"
                     style={{ position: "relative" }}
                   />
-                  <div class="new_tag">
+                  {/* <div class="new_tag">
                     New
                     <div class="new_tag block1"></div>
                     <div class="new_tag block2"></div>
+                  </div> */}
+                  <div className="badge-overlay">
+                    <span className="top-right badge red">Sale</span>
                   </div>
                 </Col>
                 <Col sm={12} md={6} className="mt-5 text-left">

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChatDots, ChatDotsFill } from "react-bootstrap-icons";
+import { ChatDots, ChatDotsFill, Robot } from "react-bootstrap-icons";
 import ChatBot from "react-simple-chatbot";
 import "../css/ChatBot.css";
 

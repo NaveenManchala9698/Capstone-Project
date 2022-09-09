@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import SingleProduct from "../components/SingleProduct";
-import { SpinnerDotted } from "spinners-react";
+import { SpinnerDotted, SpinnerRoundOutlined } from "spinners-react";
 import Footer from "../components/Footer";
 
 const SearchedCategoryPage = ({ categoryName }) => {
@@ -49,11 +49,11 @@ const SearchedCategoryPage = ({ categoryName }) => {
       <Container style={{ marginTop: "10rem" }}>
         <Row className="justify-content-center">
           {isLoading && (
-            <SpinnerDotted
-              size={87}
-              thickness={180}
-              speed={100}
-              color="rgba(57, 172, 111, 1)"
+            <SpinnerRoundOutlined
+              size={79}
+              thickness={134}
+              speed={91}
+              color="rgb(255, 63, 108)"
             />
           )}
           {searchResults &&
