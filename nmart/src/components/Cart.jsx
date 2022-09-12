@@ -27,14 +27,16 @@ const Cart = () => {
       style={{ marginTop: "7rem" }}
     >
       <h1>SHOPPING BAG</h1>
-      <div>{cartItems.length === 0 && <div>Cart is Empty</div>}</div>
+      <div className="mb-3">
+        {cartItems.length === 0 && <div>Cart is Empty</div>}
+      </div>
       <div>
         <Row>
-          <Col md={8}>
+          <Col md={8} style={{ marginTop: "40px" }}>
             {cartItems &&
               cartItems.map((eachCartItem, i) => (
                 <Row className="cart-item-container">
-                  <Col md={3} key={i} className="cart-item-img-container">
+                  <Col md={3} key={i} className="cart-item-img-container ">
                     <img
                       className="d-block w-100"
                       src={eachCartItem.defaultArticle.normalPicture[0].url}

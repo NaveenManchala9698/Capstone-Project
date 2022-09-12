@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import fire from "../fire";
 import SearchBar from "./SearchBar";
 import {
+  BoxArrowRight,
   CaretDownFill,
   CaretRightFill,
   Flag,
@@ -174,10 +175,57 @@ const Navbar2 = ({ search }) => {
           </div>
 
           <div className="logout-div">
-            <a href="#" className="logout-button" onClick={handleLogout}>
+            <a href="#" className="logout-button">
               {/* <BoxArrowRight className="logout-icon" /> */}
-              <img src="https://secure.gravatar.com/avatar/b00a75773920a3d17b9098645e34459c?s=384" />
-              <div className="logout">LOGOUT</div>
+              <div className="profile">
+                <img src="https://secure.gravatar.com/avatar/b00a75773920a3d17b9098645e34459c?s=384" />
+                <div className="sub-menu-3">
+                  <ul>
+                    <Link to="#">
+                      <li>
+                        Hello Naveen <hr />
+                      </li>
+                    </Link>
+                    <Link to="/women">
+                      <li>Orders</li>
+                    </Link>
+                    <Link to="/favourites">
+                      <li>Wishlist</li>
+                    </Link>
+                    <Link to="#">
+                      <li>Gift cards</li>
+                    </Link>
+                    <Link to="#">
+                      <li>Contact Us</li>
+                    </Link>
+                    <Link to="#">
+                      <li>
+                        Coupons <hr />
+                      </li>
+                    </Link>
+                    <Link to="#">
+                      <li>Saved Cards</li>
+                    </Link>
+                    <Link to="#">
+                      <li>
+                        Saved Addresses
+                        <hr />
+                      </li>
+                    </Link>
+                    <Link to="#">
+                      <li>Edit Profile</li>
+                    </Link>
+                    <Link to="/login">
+                      <li onClick={handleLogout}>Log Out</li>
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+              <Link to="/login">
+                <div className="logout" onClick={handleLogout}>
+                  <BoxArrowRight />
+                </div>
+              </Link>
             </a>
             {/* <BoxArrowRight className="mr-2" /> Log out
           </a> */}

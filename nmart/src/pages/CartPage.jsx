@@ -1,11 +1,12 @@
 import Cart from "../components/Cart";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Navbar2 from "../components/Navbar2";
 
 const CartPage = () => {
   return (
     <>
-      <Navbar />
+      <Navbar2 />
       <Cart />
       <Footer />
     </>

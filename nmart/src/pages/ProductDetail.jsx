@@ -11,6 +11,7 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addFavourite, addToCart, removeFavourite } from "../redux/actions";
 import Footer from "../components/Footer";
+import Navbar2 from "../components/Navbar2";
 
 const ProductDetail = ({ products }) => {
   const [productDetails, setProductDetails] = useState([]);
@@ -51,7 +52,7 @@ const ProductDetail = ({ products }) => {
         method: "GET",
         headers: {
           "X-RapidAPI-Key":
-            "fe1f236124msh1767e0572a8242fp16034djsn23e3142518a1",
+            "d5a66367cfmsh80d30c00612e90ep1cb66ejsna929d5aabc69",
           "X-RapidAPI-Host": "apidojo-hm-hennes-mauritz-v1.p.rapidapi.com",
         },
       };
@@ -76,30 +77,34 @@ const ProductDetail = ({ products }) => {
   };
   return (
     <>
-      <Navbar />
+      <Navbar2 />
       <div className="product-details" style={{ marginTop: "6rem" }}>
         <Container className="mx-auto mb-4">
           <Row>
             {productDetails && (
               <>
                 <Col sm={12} md={6} className="mt-5 ">
-                  <img
-                    src={productImageUrl}
-                    alt={porductsJson.results[0].name}
-                    height="600px"
-                    width="400px"
-                    style={{ position: "relative" }}
-                  />
-                  {/* <div class="new_tag">
+                  <div style={{ position: "relative" }}>
+                    <img
+                      src={productImageUrl}
+                      alt={porductsJson.results[0].name}
+                      /*   height="600px"
+                    width="400px" */
+                      className="img-fluid"
+                      style={{ position: "relative" }}
+                    />
+
+                    {/* <div class="new_tag">
                     New
                     <div class="new_tag block1"></div>
                     <div class="new_tag block2"></div>
                   </div> */}
-                  <div className="badge-overlay">
-                    <span className="top-right badge red">Sale</span>
+                    <div className="badge-overlay">
+                      <span className="top-right badge red">Sale</span>
+                    </div>
                   </div>
                 </Col>
-                <Col sm={12} md={6} className="mt-5 text-left">
+                <Col sm={12} md={6} className="mt-5 text-left pl-4">
                   <h1>
                     <b>{porductsJson.results[0].brandName}</b>
                   </h1>

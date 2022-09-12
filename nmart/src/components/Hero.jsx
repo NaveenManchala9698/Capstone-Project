@@ -25,7 +25,7 @@ const Hero = () => {
                     <h4>Min. 60% Off</h4>
                   </div>
                   <hr />
-                  <span style={{ cursor: "pointer" }}>
+                  <span className="explore" style={{ cursor: "pointer" }}>
                     <Plus /> Explore
                   </span>
                 </div>
@@ -50,7 +50,7 @@ const Hero = () => {
                     <h4>Min. 30% Off</h4>
                   </div>
                   <hr />
-                  <span style={{ cursor: "pointer" }}>
+                  <span className="explore" style={{ cursor: "pointer" }}>
                     <Plus /> Explore
                   </span>
                 </div>
@@ -75,7 +75,7 @@ const Hero = () => {
                     <h4>Min. 60% Off</h4>
                   </div>
                   <hr />
-                  <span style={{ cursor: "pointer" }}>
+                  <span className="explore" style={{ cursor: "pointer" }}>
                     <Plus /> Explore
                   </span>
                 </div>
@@ -100,7 +100,7 @@ const Hero = () => {
                     <h4>40-70% Off</h4>
                   </div>
                   <hr />
-                  <span style={{ cursor: "pointer" }}>
+                  <span className="explore">
                     <Plus /> Explore
                   </span>
                 </div>

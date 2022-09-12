@@ -8,15 +8,17 @@
   );
   /* font-size: 3rem; */
   position: fixed;
-  top: 38rem;
+  bottom: 4rem;
   right: 3rem;
   z-index: 2;
+  transform: translateY(50%) scale(1);
+  transition: transform 1s;
 }
 
 .chatBot-container .botIconContainer img {
   /* height: 50px; */
-  width: 75px;
-  padding: 12px;
+  width: 60px;
+  padding: 10px;
 }
 
 .chatBot {

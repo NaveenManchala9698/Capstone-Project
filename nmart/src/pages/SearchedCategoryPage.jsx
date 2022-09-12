@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import SingleProduct from "../components/SingleProduct";
 import { SpinnerDotted, SpinnerRoundOutlined } from "spinners-react";
 import Footer from "../components/Footer";
+import Navbar2 from "../components/Navbar2";
 
 const SearchedCategoryPage = ({ categoryName }) => {
   // GET PRODUCTS
@@ -23,7 +24,7 @@ const SearchedCategoryPage = ({ categoryName }) => {
         {
           headers: {
             "X-RapidAPI-Key":
-              "fe1f236124msh1767e0572a8242fp16034djsn23e3142518a1",
+              "d5a66367cfmsh80d30c00612e90ep1cb66ejsna929d5aabc69",
             "X-RapidAPI-Host": "apidojo-hm-hennes-mauritz-v1.p.rapidapi.com",
           },
         }
@@ -45,7 +46,7 @@ const SearchedCategoryPage = ({ categoryName }) => {
   };
   return (
     <>
-      <Navbar />
+      <Navbar2 />
       <Container style={{ marginTop: "10rem" }}>
         <Row className="justify-content-center">
           {isLoading && (

@@ -93,7 +93,7 @@ const Chatbot1 = () => {
         <ChatBot
           steps={steps}
           className="chatBot"
-          style={{ visibility: isVisible ? "visible" : "hidden" }}
+          style={{ display: isVisible ? "block" : "none" }}
         />
       </div>
     </>

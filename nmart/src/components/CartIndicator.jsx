@@ -10,7 +10,9 @@ const CartIndicator = () => {
   return (
     <div onClick={() => navigate("/cart")}>
       <Cart4 />
-      <div>Cart ({cartLength})</div>
+      <div>
+        Cart <span className="cart-length">{cartLength}</span>
+      </div>
     </div>
   );
 };

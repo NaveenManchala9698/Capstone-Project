@@ -21,8 +21,16 @@
   font-weight: 700;
 }
 
+.explore {
+  background-color: rgb(220, 220, 220);
+  border-radius: 3px;
+  padding: 4px;
+  padding-right: 6px;
+  cursor: pointer;
+}
+
 .categories-to-bag {
-  margin-top: 3rem;
+  margin-top: 4rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -43,6 +51,7 @@
 
 .all-products {
   font-family: "Montserrat", sans-serif;
+  margin-top: 2rem;
 }
 
 @media (max-width: 1400px) {

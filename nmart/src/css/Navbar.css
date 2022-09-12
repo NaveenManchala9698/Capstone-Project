@@ -147,24 +147,20 @@ body {
 
 .logout-div img {
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   float: left;
   color: aliceblue;
 }
 
 .logout {
   color: black;
-  font-size: 0.7rem;
-  margin-left: 1em;
-  position: relative;
+  font-size: 1.5rem;
+  margin-left: 5px;
   overflow: hidden;
   letter-spacing: 1px;
-  opacity: 0;
-  transition: opacity 0.45s;
-  -webkit-transition: opacity 0.35s;
 }
-
+/*
 .logout-button {
   text-decoration: none;
   margin: 5px 0px;
@@ -187,7 +183,7 @@ a:hover .logout {
 }
 a {
   text-decoration: none !important;
-}
+} */
 
 /* Categories dropdown */
 
@@ -223,10 +219,27 @@ a {
 
 .nav ul li:hover .sub-menu ul li:hover {
   padding-left: 25px;
-  width: 170px;
+  /* width: 170px; */
+  /* background-color: #f0f0f0; */
+  box-shadow: 2px 6px 20px -2px rgba(0, 0, 0, 0.75);
   color: #ec6f66;
   font-weight: bold;
   border-bottom: 5px solid transparent;
+}
+
+/* CART-INDICATOR */
+
+.cart-length {
+  background-color: rgb(255, 63, 108);
+  border-radius: 12px;
+  color: white;
+  display: inline-block;
+  font-size: 19px;
+  line-height: 1;
+  padding: 3px 8px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
 /* REGIONS DROPDOWN */
@@ -253,6 +266,45 @@ a {
 .nav .nav-right .nav-icons .flag:hover .sub-menu-2 a:hover {
   color: #ec6f66;
   font-weight: bold;
+}
+
+.sub-menu-3 {
+  display: none;
+}
+
+.logout-div .profile:hover .sub-menu-3 {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  width: 200px;
+  z-index: 100;
+  right: 50px;
+  top: 60px;
+}
+
+.logout-div .profile:hover .sub-menu-3 ul {
+  display: block;
+}
+
+.logout-div .profile:hover .sub-menu-3 ul a {
+  padding: 0;
+}
+
+.logout-div .profile:hover .sub-menu-3 ul li {
+  background-color: white;
+  color: gray;
+  font-size: 16px;
+  padding: 2px 15px;
+  cursor: pointer;
+  border-radius: 0;
+  text-align: left;
+  width: 200px;
+}
+
+.logout-div .profile:hover .sub-menu-3 ul li:hover {
+  padding-left: 25px;
+  box-shadow: 2px 6px 20px -2px rgba(0, 0, 0, 0.75);
+  color: #ec6f66;
 }
 
 /* @media (max-width: 992px) {
