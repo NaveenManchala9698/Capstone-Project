@@ -186,7 +186,7 @@ const Navbar2 = ({ search }) => {
                         Hello Naveen <hr />
                       </li>
                     </Link>
-                    <Link to="/women">
+                    <Link to="/MyOrders">
                       <li>Orders</li>
                     </Link>
                     <Link to="/favourites">
@@ -212,7 +212,7 @@ const Navbar2 = ({ search }) => {
                         <hr />
                       </li>
                     </Link>
-                    <Link to="#">
+                    <Link to="/EditProfile">
                       <li>Edit Profile</li>
                     </Link>
                     <Link to="/login">

@@ -6,6 +6,7 @@ import SingleProduct from "../components/SingleProduct";
 import { SpinnerDotted, SpinnerRoundOutlined } from "spinners-react";
 import Footer from "../components/Footer";
 import Navbar2 from "../components/Navbar2";
+import "../css/ProductDetails.css";
 
 const SearchedCategoryPage = ({ categoryName }) => {
   // GET PRODUCTS
@@ -47,7 +48,7 @@ const SearchedCategoryPage = ({ categoryName }) => {
   return (
     <>
       <Navbar2 />
-      <Container style={{ marginTop: "10rem" }}>
+      <Container className="loading-container" style={{ marginTop: "10rem" }}>
         <Row className="justify-content-center">
           {isLoading && (
             <SpinnerRoundOutlined

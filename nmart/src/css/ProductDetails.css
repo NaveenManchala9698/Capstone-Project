@@ -275,3 +275,7 @@
   transform: skew(0deg, 28deg);
 }
  */
+
+.loading-container {
+  min-height: 200px;
+}

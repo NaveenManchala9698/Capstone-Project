@@ -74,21 +74,19 @@ const Chatbot1 = () => {
       <div className="chatBot-container">
         {/* <ChatDotsFill className="chat-icon" onClick={toggleChatBot} /> */}
 
-        {isVisible ? (
-          <div className="botIconContainer" onClick={toggleChatBot}>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/OOjs_UI_icon_close.svg/1200px-OOjs_UI_icon_close.svg.png"
-              alt="bot"
-            ></img>
-          </div>
-        ) : (
-          <div className="botIconContainer" onClick={toggleChatBot}>
-            <img
-              src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/chatbot-icon.png"
-              alt="close"
-            ></img>
-          </div>
-        )}
+        <div
+          className={`botIconContainer ${isVisible ? "opened" : ""}`}
+          onClick={toggleChatBot}
+        >
+          <img
+            src={
+              isVisible
+                ? "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/OOjs_UI_icon_close.svg/1200px-OOjs_UI_icon_close.svg.png"
+                : "https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/chatbot-icon.png"
+            }
+            alt={isVisible ? "bot" : "close"}
+          ></img>
+        </div>
 
         <ChatBot
           steps={steps}

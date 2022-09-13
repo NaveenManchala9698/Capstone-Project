@@ -9,6 +9,8 @@ import SearchedCategoryPage from "./pages/SearchedCategoryPage";
 import { useEffect, useState } from "react";
 import CartPage from "./pages/CartPage";
 import StripeContainer from "./components/StripeContainer";
+import EditProfile from "./components/EditProfile";
+import MyOrders from "./components/MyOrders";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -54,6 +56,8 @@ function App() {
             element={<ProductDetail products={products} />}
           />
           <Route path="/RandomPage" element={<SearchedCategoryPage />} />
+          <Route path="/EditProfile" element={<EditProfile />} />
+          <Route path="/MyOrders" element={<MyOrders />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/payment" element={<StripeContainer />} />
           <Route

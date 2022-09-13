@@ -15,6 +15,10 @@
   transition: transform 1s;
 }
 
+.chatBot-container .botIconContainer.opened {
+  transform: translateY(-497.5px) scale(0.6);
+}
+
 .chatBot-container .botIconContainer img {
   /* height: 50px; */
   width: 60px;
@@ -25,5 +29,5 @@
   float: right;
   position: fixed;
   top: 8rem;
-  right: 6rem;
+  right: 50px;
 }
