@@ -200,7 +200,7 @@ const Navbar2 = ({ search }) => {
                     </Link>
                     <Link to="#">
                       <li>
-                        Coupons <hr />
+                        Coupons/Promotuions <hr />
                       </li>
                     </Link>
                     <Link to="#">
@@ -213,7 +213,7 @@ const Navbar2 = ({ search }) => {
                       </li>
                     </Link>
                     <Link to="/EditProfile">
-                      <li>Edit Profile</li>
+                      <li>Edit your Profile</li>
                     </Link>
                     <Link to="/login">
                       <li onClick={handleLogout}>Log Out</li>
