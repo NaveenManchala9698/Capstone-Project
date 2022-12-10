@@ -241,7 +241,7 @@
 }
 
 .badge::after {
-  left: 90%;
+  left: 100%;
 }
 
 .top-right {
