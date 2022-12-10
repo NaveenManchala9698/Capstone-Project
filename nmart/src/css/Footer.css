@@ -53,7 +53,7 @@ body {
 
 /* Footer main | Newsletter form */
 form {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
 }
 input[type="email"] {
