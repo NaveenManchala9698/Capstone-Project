@@ -28,7 +28,7 @@ body {
   flex-direction: column;
 }
 .container {
-  flex: 1;
+  flex: 2;
 }
 /* Footer main */
 .ft-main {
