@@ -22,7 +22,7 @@
 .dd-button:after {
   content: "";
   position: absolute;
-  top: 60%;
+  top: 50%;
   right: 15px;
   transform: translateY(-50%);
   width: 0;
