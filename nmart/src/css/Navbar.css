@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
   padding: 0 1rem;
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
 }
