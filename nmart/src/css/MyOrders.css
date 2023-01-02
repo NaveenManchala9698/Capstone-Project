@@ -203,7 +203,7 @@ a.account-card .card:active {
 .mobile-nav {
   position: fixed;
   bottom: 0;
-  z-index: 50;
+  z-index: 48;
   display: block;
   width: 100%;
   background: #111822;
