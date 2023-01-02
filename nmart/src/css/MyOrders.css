@@ -71,7 +71,7 @@ a.account-card .card:active {
 }
 .reward-status-box .current-status {
   position: absolute;
-  right: 18px;
+  right: 15px;
   top: 15px;
   color: #ffffff;
 }
