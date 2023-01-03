@@ -326,7 +326,7 @@ a.account-card .card:active {
 .address-radio [type="radio"]:not(:checked) + label:before {
   content: "";
   position: absolute;
-  left: 1rem;
+  left: 2rem;
   top: 1rem;
   width: 20px;
   height: 20px;
