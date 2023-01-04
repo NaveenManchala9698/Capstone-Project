@@ -341,7 +341,7 @@ a.account-card .card:active {
   height: 12px;
   background: #00a362;
   position: absolute;
-  top: 200px;
+  top: 20px;
   left: 20px;
   border-radius: 50%;
   transition: all 0.2s ease;
